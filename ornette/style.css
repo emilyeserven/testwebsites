@@ -1,0 +1,152 @@
+html {
+    background-color:#000;
+}
+.content-wrap {
+        max-width:1000px;
+        margin: 0 auto;
+}
+.header {
+    background-color:#111;
+    padding: 0px 50px;
+    max-width:1000px;
+    margin:0 auto;
+    font-size:40px;
+}
+.header img {
+    float:left;
+}
+.intro {
+    padding: 10px 50px;
+    color:#111;
+    background-color:#FEE900;
+    font-family: Helvetica;
+    margin-top:-10px;
+}
+.intro:after, .personnel:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.intro .content-wrap {
+    margin-left: 425px;
+        font-size: 25px;
+        margin-right: 200px;
+        vertical-align: middle;
+}
+.header h1 {
+    color:#eee;
+    text-transform:uppercase;
+    font-family:Arial;
+    letter-spacing:2px;
+}
+.album-info a {
+    text-decoration:none;
+    background-color:#FEE900;
+    color:#000;
+}
+.album-info a:hover {
+    background-color:#C5B400;
+}
+.album-info h2 {
+    color:#FEE900;
+    background-color:#000;
+    display:inline-block;
+    font-size:50px;
+    font-family:Arial;
+    padding:5px 15px;
+    transform:rotate(-4deg);
+    line-height:55px;
+
+}
+.album-info {
+        background-color:#fff;
+    font-family:Helvetica;
+    font-size:18px;
+    line-height:1.5em;
+    padding: 0 0 20px;
+}
+.album-info p {
+    margin-top:-10px;
+}
+.tracks {
+    padding-bottom:20px;
+}
+.tracks h3 {
+    color:#000;
+    background-color:#FEE900;
+    display:inline-block;
+    font-size:40px;
+    font-family:Arial;
+    padding:5px 15px;
+    transform:rotate(-4deg);
+    line-height:45px;
+}
+.tracks table {
+background-color:#FEE900;
+color:#000;
+width:500px;
+margin:0 auto;
+}
+.tracks table thead {
+    background-color:#FEE900;
+    border-color:#FEE900;
+    font-family:Helvetica;
+    font-size:18px;
+}
+.tracks table tbody {
+    background-color:#fff;
+}
+.tracks table tbody td {
+    padding: 5px;
+    font-family:Helvetica;
+    font-size:15px;
+}
+.personnel {
+    background-color:#fff;
+}
+.personnel h3 {
+    color:#FEE900;
+    background-color:#000;
+    display:inline-block;
+    font-size:40px;
+    font-family:Arial;
+    padding:5px 15px;
+    transform:rotate(-4deg);
+    line-height:45px;
+    float:left;
+    margin-bottom:10px;
+}
+.left h4, .right h4 {
+    font-family:Arial;
+}
+.left, .right {
+    font-family:Helvetica;
+}
+.left {
+    display:inline-block;
+    float:left;
+    width:35%;
+    margin-left:5%;
+}
+.right {
+    display: inline-block;
+    float:right;
+    width:35%;
+}
+.footer {
+    background-color:#000;
+    padding: 10px 0;
+}
+.footer .content-wrap {
+    color:#fff;
+}
+.footer a {
+    text-decoration:none;
+    color:#FEE900;
+}
+.footer a:hover {
+    color:#C5B400;
+}
