@@ -64,6 +64,14 @@ padding: 0px 20px 15px;
   font-size: 1.25em;
   line-height:1.25em;
 }
+.smith .credit p a {
+  color: #0567A1;
+  text-decoration:none;
+}
+.smith .credit p a:hover {
+  color: #024064;
+  text-decoration:underline;
+}
 .smith .decorative {
   font-family: 'Lora', sans-serif;
   font-size:28em;
