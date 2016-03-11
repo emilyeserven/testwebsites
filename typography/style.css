@@ -11,6 +11,12 @@
   font-size:3.5em;
   line-height:1.25em;
 }
+.lovecraft .quote p span::selection {
+    background-color: #800000;
+}
+.lovecraft .quote p::selection {
+    background-color: #800000;
+}
 .lovecraft .quote p span {
   color:#A30000;
 }
