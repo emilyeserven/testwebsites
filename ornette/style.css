@@ -14,12 +14,13 @@ html {
 }
 .header img {
     float:left;
+    padding-right:15px;
 }
 .intro {
     padding: 10px 50px;
     color:#111;
     background-color:#FEE900;
-    font-family: Helvetica;
+    font-family: 'Raleway', sans-serif;
     margin-top:-10px;
 }
 .intro:after, .personnel:after {
@@ -31,15 +32,15 @@ html {
      height: 0;
 }
 .intro .content-wrap {
-    margin-left: 425px;
+    /*margin-left: 425px;*/
         font-size: 25px;
-        margin-right: 200px;
+        /*margin-right: 200px;*/
         vertical-align: middle;
 }
 .header h1 {
     color:#eee;
-    text-transform:uppercase;
-    font-family:Arial;
+    /*text-transform:uppercase;*/
+    font-family: 'Special Elite', cursive;
     letter-spacing:2px;
 }
 .album-info a {
@@ -55,15 +56,15 @@ html {
     background-color:#000;
     display:inline-block;
     font-size:50px;
-    font-family:Arial;
-    padding:5px 15px;
+    font-family: 'Special Elite', cursive;
+    padding: 12px 15px 0;
     transform:rotate(-4deg);
     line-height:55px;
 
 }
 .album-info {
         background-color:#fff;
-    font-family:Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-size:18px;
     line-height:1.5em;
     padding: 0 0 20px;
@@ -79,8 +80,8 @@ html {
     background-color:#FEE900;
     display:inline-block;
     font-size:40px;
-    font-family:Arial;
-    padding:5px 15px;
+    font-family: 'Special Elite', cursive;
+    padding: 10px 15px 5px;
     transform:rotate(-4deg);
     line-height:45px;
 }
@@ -88,7 +89,8 @@ html {
 background-color:#FEE900;
 color:#000;
 width:500px;
-margin:0 auto;
+float:right;
+margin-top:50px;
 }
 .tracks table thead {
     background-color:#FEE900;
@@ -112,8 +114,8 @@ margin:0 auto;
     background-color:#000;
     display:inline-block;
     font-size:40px;
-    font-family:Arial;
-    padding:5px 15px;
+    font-family: 'Special Elite', cursive;
+    padding: 10px 15px 5px;
     transform:rotate(-4deg);
     line-height:45px;
     float:left;
@@ -149,4 +151,13 @@ margin:0 auto;
 }
 .footer a:hover {
     color:#C5B400;
+}
+@media screen and (max-width:1050px) {
+    .tracks table {
+        background-color: #FEE900;
+        color: #000;
+        width: 500px;
+        float: none;
+        margin: 0 auto;
+    }
 }
