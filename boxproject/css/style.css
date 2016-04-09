@@ -162,12 +162,41 @@ ul.navigation li {
 ul.navigation li a {
   color: #fff;
 }
-h2 {
+h2 span {
   background-color: #EC1B30;
   color:#eee;
-  border-right: transparent;
-  border-bottom: 2px solid #EC1B20;
+  display:inline-block;
   padding-left: 10px;
+  padding-right: 10px;
+  z-index:3;
+  position:relative;
+}
+h2 span.tri {
+  background-color:#EC1B30;
+  width: 70px;
+height: 70px;
+transform: rotate(45deg) translateX(-32px) translateY(17px);
+display: inline-block;
+position: absolute;
+margin-right: 0px;
+top: -25px;
+  z-index:-2;
+}
+h2 span.rect {
+  background-color:#000;
+  z-index:-1;
+  display:inline-block;
+  position:absolute;
+  width: 100px;
+  height: 50px;
+  margin-left: -50px;
+  margin-top: -55px;
+}
+h2 {
+  border-right: transparent;
+  border-top: 5px solid #EC1B20;
+  display:block;
+  position:relative;
 }
 
 
