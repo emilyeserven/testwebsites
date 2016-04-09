@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Atrox';
+  src: url('../fonts/ATROX.TTF');
+}
+
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
+
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 3em; /* 48px */
+}
+
+h2 {
+  font-size: 2.25em /* 36px */
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+html {
+  background-color:#111;
+  color:#eee;
+}
+header h1 {
+  font-family: Ubuntu;
+  font-weight:700;
+  margin: 0.1em 0;
+}
+ul.navigation li a {
+    color: #fff;
+    line-height: 3em;
+    padding: .5em 1em;
+    margin: .5em 1em;
+    display: inline-block;
+}
+ul.navigation.subnav li a {
+    color: #fff;
+    line-height: 1.5em;
+    padding: .15em 1em;
+    margin: .15em 1em;
+    display: inline-block;
+    position:relative;
+}
+.image-head {
+  background-image: url("../img/motherboard.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-color:#111;
+  height:300px;
+  width:100%;
+    margin-top:100px;
+  display:block;
+}
+.image-head .text-div {
+  position: relative;
+  bottom:0;
+  background-color: rgba(255,255,255,0.5);
+  padding: 15px 30px 5px;
+  display:inline-block;
+}
+.image-head .z97x {
+  font-family: Atrox;
+  font-size: 4em;
+  line-height:1em;
+}
+.secondary {
+  position:fixed;
+  top:80px;
+  padding-right:15px;
+  right: 0;
+  background-color:#EC1B30;
+}
+.slant {
+  display:inline;
+}
+.triangle {
+  background-color:#EC1B30;
+  width: 40px;
+height: 40px;
+transform: rotate(45deg);
+display: inline-block;
+position: absolute;
+left: -20px;
+top: -15px;
+  z-index:1;
+}
+.menu-wrap .wrap {
+    z-index: 5;
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 5px solid #EC1B30;
+}
+.image-head .z97x span {
+  color:#EC1B30;
+}
+.menu-wrap {
+  display:block;
+  background-color:#111;
+  color: #fff;
+  position:fixed;
+  width:100%;
+  top: 0;
+  z-index: 5;
+  border-bottom: 5px #EC1B30 solid;
+}
+.menu-wrap nav {
+  float:right;
+}
+.menu-wrap header {
+  float:left;
+}
+ul.navigation li {
+  display:inline-block;
+}
+ul.navigation li a {
+  color: #fff;
+}
+h2 {
+  background-color: #EC1B30;
+  color:#eee;
+  border-right: transparent;
+  border-bottom: 2px solid #EC1B20;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
