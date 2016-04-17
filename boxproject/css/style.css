@@ -66,6 +66,13 @@ html {
   background-color:#111;
   color:#eee;
 }
+h1 a {
+  color: #fff;
+  text-decoration:none;
+}
+h1 a:hover {
+  color: #EC1B30;
+}
 a.anchor {
     position: relative;
     top: -75px;
@@ -91,6 +98,9 @@ ul.navigation.subnav li a {
     display: inline-block;
     position:relative;
 }
+main {
+    margin-top:100px;
+}
 .image-head {
   background-image: url("../img/motherboard.JPG");
   background-size: cover;
@@ -98,7 +108,6 @@ ul.navigation.subnav li a {
   background-color:#111;
   height:300px;
   width:100%;
-    margin-top:100px;
   display:block;
 }
 .image-head .text-div {
@@ -188,7 +197,7 @@ top: -25px;
   z-index:-2;
 }
 h2 span.rect {
-  background-color:#000;
+  background-color:#111;
   z-index:-1;
   display:inline-block;
   position:absolute;
@@ -203,7 +212,18 @@ h2 {
   display:block;
   position:relative;
 }
-
+.gallery-row .gallery-blk {
+  width:24%;
+  display:inline-block;
+}
+.gallery-row.half .gallery-blk {
+  width:49%;
+  display:inline-block;
+}
+.gallery-blk img {
+  height:175px;
+  width:100%;
+}
 
 
 
