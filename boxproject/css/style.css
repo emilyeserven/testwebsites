@@ -66,6 +66,11 @@ html {
   background-color:#111;
   color:#eee;
 }
+a.anchor {
+    position: relative;
+    top: -75px;
+    display: block;
+}
 header h1 {
   font-family: Ubuntu;
   font-weight:700;
