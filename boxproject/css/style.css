@@ -359,7 +359,7 @@ main {
     display: inline-block;
 }
 ul.navigation li a {
-  font-size:.6em;
+  font-size:.75em;
 }
 .navigation {
     margin-top: -.5em;
