@@ -358,6 +358,9 @@ main {
   ul.navigation li {
     display: inline-block;
 }
+ul.navigation li a {
+  font-size:.6em;
+}
 .navigation {
     margin-top: -.5em;
     margin-bottom: .5em;
