@@ -250,7 +250,6 @@ h2 {
   margin-right:2%;
 }
 .gallery-blk img {
-  height:175px;
   width:100%;
 }
 @media screen and (max-width:1130px) {
@@ -284,7 +283,7 @@ h2 {
     top: -22px;
   }
   .gallery-blk img {
-    height: 125px;
+    width: 100%;
   }
 }
 @media screen and (max-width:930px) {
@@ -322,7 +321,7 @@ h2 {
     margin-right: 0%;
   }
   .gallery-blk img {
-    height: 175px;
+    width:100%;
   }
 }
 @media screen and (max-width:590px) {
@@ -345,7 +344,7 @@ h2 {
     margin-bottom:5%;
 }
 .gallery-blk img {
-    height: 225px;
+    width:100%;
 }
 main {
   margin-top:100px;
@@ -359,7 +358,7 @@ main {
     display: inline-block;
 }
 ul.navigation li a {
-  font-size:.75em;
+  font-size:.85em;
 }
 .navigation {
     margin-top: -.5em;
