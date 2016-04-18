@@ -78,18 +78,24 @@ a.anchor {
     top: -75px;
     display: block;
 }
-header h1 {
-  font-family: Ubuntu;
+header h1 a {
+  font-family: Ubuntu !important;
   font-weight:700;
-  margin: 0.1em 0;
+  margin: 0.1em 0.5em 0 0;
+  font-size:.75em;
+  letter-spacing: 0;
 }
-ul.navigation li a {
-    color: #fff;
-    line-height: 3em;
-    padding: .5em 1em;
-    margin: .5em 1em;
-    display: inline-block;
+header h1 {
+  font-family: Atrox;
+  font-size: 4.5em;
+  letter-spacing: 1px;
+  line-height:1em;
+  margin: 10px 0;
 }
+header h1 span {
+  color: #EC1B30;
+}
+
 ul.navigation.subnav li a {
     color: #fff;
     line-height: 1.5em;
@@ -124,10 +130,14 @@ main {
 }
 .secondary {
   position:fixed;
-  top:80px;
+  top:90px;
   padding-right:15px;
   right: 0;
   background-color:#EC1B30;
+}
+.navigation.subnav li a {
+  border: 0;
+
 }
 .slant {
   display:inline;
@@ -166,6 +176,7 @@ top: -15px;
 }
 .menu-wrap nav {
   float:right;
+  font-family: ubuntu;
 }
 .menu-wrap header {
   float:left;
@@ -174,7 +185,21 @@ ul.navigation li {
   display:inline-block;
 }
 ul.navigation li a {
-  color: #fff;
+    color: #fff;
+    line-height: 3em;
+    padding: 0em 1em;
+    margin: 1.25em 1em 0;
+    text-decoration: none;
+    display: inline-block;
+    border: solid 3px #fff;
+    transition: background 0.1s linear;
+    -webkit-transition: background 0.1s linear;
+    -moz-transition: background 0.1s linear;
+    -ms-transition: background 0.1s linear;
+    -o-transition: background 0.1s linear;
+}
+ul.navigation li a:hover, ul.navigation li.active a {
+  background-color: #EC1B30;
 }
 h2 span {
   background-color: #EC1B30;
@@ -213,19 +238,119 @@ h2 {
   position:relative;
 }
 .gallery-row .gallery-blk {
-  width:24%;
+  width:22%;
   display:inline-block;
+  margin-right:2%;
+  vertical-align:top;
+  margin-bottom:1%;
 }
 .gallery-row.half .gallery-blk {
-  width:49%;
+  width:47%;
   display:inline-block;
+  margin-right:2%;
 }
 .gallery-blk img {
   height:175px;
   width:100%;
 }
+@media screen and (max-width:1130px) {
+  header h1 a {
+    display:block;
+  }
 
+    main {
+      margin-top:200px;
+    }
+  .menu-wrap nav {
+    font-size: 1.25em;
+  }
+  .secondary {
+    top: 164px;
+  }
+  ul.navigation.subnav li a {
+    font-size:1.15em;
+  }
+  ul.navigation li a {
+    margin-top: 2.5em;
+  }
+  .triangle {
+    background-color: #EC1B30;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    display: inline-block;
+    position: absolute;
+    left: -25px;
+    top: -22px;
+  }
+  .gallery-blk img {
+    height: 125px;
+  }
+}
+@media screen and (max-width:930px) {
+  ul.navigation li a {
+    margin: 2.5em 0em 0;
+  }
 
+}
+@media screen and (max-width:840px) {
+  ul.navigation.subnav {
+      display: none;
+  }
+  .navigation {
+    margin-top: 1em;
+  }
+  ul.navigation li {
+    display:block;
+  }
+  ul.navigation li a {
+    line-height: 1.5em;
+    margin: 0.2em 0em 0;
+    display:block;
+  }
+  main {
+    margin-top: 150px;
+}
+}
+@media screen and (max-width:780px) {
+  .gallery-row .gallery-blk {
+    width:47%;
+  }
+  .gallery-row.half .gallery-blk {
+    width: 100%;
+    display: inline-block;
+    margin-right: 0%;
+  }
+  .gallery-blk img {
+    height: 175px;
+  }
+}
+@media screen and (max-width:590px) {
+  header h1 {
+    font-size: 2.75em;
+    margin: .45em 0;
+    line-height: .9em;
+  }
+  .navigation {
+    margin-top: .25em;
+  }
+  ul.navigation li a {
+    line-height: 1.5em;
+    margin: 0.1em 0em 0;
+    border: solid 2px #fff;
+  }
+  .gallery-row .gallery-blk {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom:5%;
+}
+.gallery-blk img {
+    height: 225px;
+}
+main {
+  margin-top:100px;
+}
+}
 
 
 
