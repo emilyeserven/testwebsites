@@ -351,6 +351,21 @@ main {
   margin-top:100px;
 }
 }
+@media screen and (max-width:420px) {
+  .menu-wrap nav {
+    float: left;
+  }
+  ul.navigation li {
+    display: inline-block;
+}
+.navigation {
+    margin-top: -.5em;
+    margin-bottom: .5em;
+}
+main {
+    margin-top: 150px;
+}
+}
 
 
 
