@@ -16,6 +16,9 @@ var compScore = 0;
 
 var elUserScore = document.getElementById('userScore');
 var elCompScore = document.getElementById('compScore');
+var elUserPick = document.getElementById('userPick');
+var elCompPick = document.getElementById('compPick');
+var elOverallResult = document.getElementById('overallResult');
 
 //ORIGINAL CODE FROM CODECADEMY:
 
@@ -71,8 +74,8 @@ var computerRoll = function() {
 var userChoice = function(choice) {
     var userChoice = choice;
     console.log("1. User Choice is " + choice);
-    var computerChoice = 0;
-    console.log(compare(userChoice, computerRoll()));
+    var computerChoice = computerRoll();
+    console.log(compare(userChoice, computerChoice));
     console.log("6. " + result[0]);
     var getResult = (function() {
         if (result[1] === "user") {
@@ -90,6 +93,9 @@ var userChoice = function(choice) {
     console.log("User Score is now " + userScore + ", while Computer Score is now " + compScore + ".");
     elUserScore.textContent = userScore;
     elCompScore.textContent = compScore;
+    elUserPick.textContent = userChoice;
+    elCompPick.textContent = computerChoice;
+    elOverallResult.textContent = result[0];
 }
 
 //function
