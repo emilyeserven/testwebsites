@@ -241,6 +241,15 @@ h2 {
   display:block;
   position:relative;
 }
+footer .row .column {
+  padding: 0 !important;
+}
+.column.half:nth-of-type(1) {
+  padding-left: 0px;
+}
+.column.half:nth-of-type(2) {
+  padding-right: 0px;
+}
 .gallery-row .gallery-blk {
   width:22%;
   display:inline-block;
@@ -268,10 +277,10 @@ h2 {
     width: 52%;
   }
   .secondary.gallery {
-    width: 46.5%;
+    width: 45%;
   }
   .secondary.closeup {
-    width: 36%;
+    width: 28%;
   }
 }
 @media screen and (max-width:1130px) {
