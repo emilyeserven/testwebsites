@@ -161,6 +161,10 @@ top: -15px;
     max-width: 100%;
     border-bottom: 5px solid #EC1B30;
 }
+.wrapper {
+  max-width:1180px;
+  margin:0 auto;
+}
 .image-head .z97x span {
   color:#EC1B30;
 }
@@ -251,6 +255,24 @@ h2 {
 }
 .gallery-blk img {
   width:100%;
+}
+@media screen and (min-width:1270px) {
+  .secondary {
+    position: fixed;
+    top: 90px;
+    padding-right: 15px;
+    right: 0;
+    background-color: #EC1B30;
+  }
+  .secondary.home {
+    width: 52%;
+  }
+  .secondary.gallery {
+    width: 46.5%;
+  }
+  .secondary.closeup {
+    width: 36%;
+  }
 }
 @media screen and (max-width:1130px) {
   header h1 a {

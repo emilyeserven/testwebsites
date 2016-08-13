@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Deutsch;
+    src: url(Deutsch.ttf);
+}
+.lovecraft .quote p {
+  font-family: Deutsch, sans-serif;
+  font-size:3.5em;
+  line-height:1.25em;
+}
+.lovecraft .quote p span::selection {
+    background-color: #800000;
+}
+.lovecraft .quote p::selection {
+    background-color: #800000;
+}
+.lovecraft .quote p span {
+  color:#A30000;
+}
+.lovecraft .quote p.credit {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align:right;
+  letter-spacing:1px;
+  padding-top:50px;
+}
+html {
+  background-color:#000;
+}
+.lovecraft .quote-wrapper {
+  max-width:1000px;
+  margin:0 auto;
+  padding: 100px 0;
+  color:#eee;
+}
