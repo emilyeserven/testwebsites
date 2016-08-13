@@ -51,10 +51,29 @@ padding: 0px 20px 15px;
   font-family: 'Lora', sans-serif;
   font-size:28em;
   position:relative;
-  right:0.25em;
+  right:0.10em;
   z-index:1;
   transform:rotate(6deg);
   top: -0.25em;
   color:#B5E2FC;
   float:right;
+}
+@media screen and (max-width:1015px) {
+  .smith .quote-wrapper {
+    max-width: 950px;
+    padding: 50px 50px;
+  }
+  .smith .decorative {
+    right: initial;
+    z-index: 1;
+    top: initial;
+    float: none;
+    margin: -0.25em auto;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  .smith.quote-block {
+    margin: 5% auto 0;
+  }
 }
