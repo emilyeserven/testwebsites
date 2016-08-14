@@ -10,7 +10,7 @@ html {
     padding: 0px 50px;
     max-width:1000px;
     margin:0 auto;
-    font-size:40px;
+    font-size:2.5em;
 }
 .header img {
     float:left;
@@ -32,10 +32,8 @@ html {
      height: 0;
 }
 .intro .content-wrap {
-    /*margin-left: 425px;*/
-        font-size: 25px;
-        /*margin-right: 200px;*/
-        vertical-align: middle;
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 .header h1 {
     color:#eee;
@@ -55,35 +53,37 @@ html {
     color:#FEE900;
     background-color:#000;
     display:inline-block;
-    font-size:50px;
+    font-size:3em;
     font-family: 'Special Elite', cursive;
-    padding: 12px 15px 0;
+    padding: .25em .2em 0;
     transform:rotate(-4deg);
-    line-height:55px;
+    line-height:1.25em;
 
 }
 .album-info {
         background-color:#fff;
     font-family: 'Raleway', sans-serif;
-    font-size:18px;
-    line-height:1.5em;
-    padding: 0 0 20px;
+    padding: 0 0 .25em;
 }
 .album-info p {
-    margin-top:-10px;
+    margin-top:-.25em;
+    font-size:1em;
+    line-height:1.25em;
 }
 .tracks {
     padding-bottom:20px;
 }
+h3 {
+    font-size:2.5em;
+    padding: .25em .2em .1em;
+    line-height: 1.25em;
+    display:inline-block;
+    font-family: 'Special Elite', cursive;
+    transform: rotate(-4deg);
+}
 .tracks h3 {
     color:#000;
     background-color:#FEE900;
-    display:inline-block;
-    font-size:40px;
-    font-family: 'Special Elite', cursive;
-    padding: 10px 15px 5px;
-    transform:rotate(-4deg);
-    line-height:45px;
 }
 .tracks table {
 background-color:#FEE900;
@@ -102,9 +102,9 @@ margin-top:50px;
     background-color:#fff;
 }
 .tracks table tbody td {
-    padding: 5px;
+    padding: .25em;
     font-family:Helvetica;
-    font-size:15px;
+    font-size:1em;
 }
 .personnel {
     background-color:#fff;
@@ -112,17 +112,16 @@ margin-top:50px;
 .personnel h3 {
     color:#FEE900;
     background-color:#000;
-    display:inline-block;
-    font-size:40px;
-    font-family: 'Special Elite', cursive;
-    padding: 10px 15px 5px;
-    transform:rotate(-4deg);
-    line-height:45px;
     float:left;
-    margin-bottom:10px;
+    margin-bottom:.1em;
+}
+.personnel .content-wrap li {
+    font-size: 1em;
 }
 .left h4, .right h4 {
     font-family:Arial;
+    font-size: 1.1em;
+    margin-bottom: -.75em;
 }
 .left, .right {
     font-family:Helvetica;
@@ -158,6 +157,45 @@ margin-top:50px;
         color: #000;
         width: 500px;
         float: none;
+        margin: 0 auto .75em
+    }
+    .content-wrap {
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .album-info, .personnel, .tracks {
+        padding: .25em 20px;
+    }
+    .left, .right {
+        display: block;
+        float: none;
+        width: 20em;
         margin: 0 auto;
+        position: relative;
+    }
+    .left h4, .right h4 {
+        font-family: Arial;
+        margin-bottom: -10px;
+    }
+    .personnel h3 {
+        margin-top: 0em;
+    }
+}
+@media screen and (max-width: 380px) {
+    .left h4, .right h4 {
+        font-size: 4.5em;
+    }
+    .left ul li {
+        font-size: 3em;
+    }
+    .left, .right {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .album-info p {
+        line-height: 1.5em;
     }
 }
