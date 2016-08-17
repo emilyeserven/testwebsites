@@ -9,20 +9,18 @@
 // BONUS: Options for best out of 5 or 10 wins as well.
 // BONUS: Custom setting to input the rounds you want to play. Set before playing game.
 
-
+// Initialize the user and computer scores and set them to 0.
 var userScore = 0;
 var compScore = 0;
 
-
+// Store (cache) the DOM nodes that will be modified for later.
 var elUserScore = document.getElementById('userScore');
 var elCompScore = document.getElementById('compScore');
 var elUserPick = document.getElementById('userPick');
 var elCompPick = document.getElementById('compPick');
 var elOverallResult = document.getElementById('overallResult');
 
-//ORIGINAL CODE FROM CODECADEMY:
-
-
+// Set up the function to compare the user choice and computer choice.
 var compare = function(choice1, choice2) {
     if (choice1 === choice2) {
         console.log("5a. Tie.");
@@ -54,9 +52,12 @@ var compare = function(choice1, choice2) {
     }
 }
 
+// Set up the function that will allow the computer to make a 'choice'.
 var computerRoll = function() {
     console.log("2. Computer is rolling.");
     var computerChoice = Math.random();
+    // Above will select a random number between 0 and 1 and store that number in the computerChoice variable.
+    // Below if statement will assign Rock, Paper, or Scissors to the number.
     if (computerChoice < 0.34) {
         var computerChoice = "rock";
         console.log("3a. Math is " + computerChoice);
@@ -68,15 +69,21 @@ var computerRoll = function() {
         console.log("3c. Math is " + computerChoice);
     }
     console.log("3sub. Computer Choice is " + computerChoice);
+    // Return the string as the variable computerChoice.
     return computerChoice;
 };
 
+// Below is the main function that executes whenever a button is clicked. Called whenever an event listener (below) is activated.
 var userChoice = function(choice) {
+    //set the function input to be the variable userChoice.
     var userChoice = choice;
     console.log("1. User Choice is " + choice);
+    // assign the returned value of the computerRoll function to the variable computerChoice.
     var computerChoice = computerRoll();
+    // Compare the two scores with the compare function.
     console.log(compare(userChoice, computerChoice));
     console.log("6. " + result[0]);
+    // Immediatly call the getResult function, which will add to the user score, computer score, or neither.
     var getResult = (function() {
         if (result[1] === "user") {
             userScore++;
@@ -91,6 +98,7 @@ var userChoice = function(choice) {
         }
     } () );
     console.log("User Score is now " + userScore + ", while Computer Score is now " + compScore + ".");
+    // Modify the cached elements (at top) to the new values.
     elUserScore.textContent = userScore;
     elCompScore.textContent = compScore;
     elUserPick.textContent = userChoice;
@@ -104,7 +112,8 @@ var userChoice = function(choice) {
 // compare
 // return result
 
-
+// For any of the below event listeners, they're activated with a click on a specific element with an ID specified.
+// They then call the userChoice function with a specific string value. 
 var rockBox = document.getElementById('rock');
 rockBox.addEventListener('click', function() {
     userChoice("rock");
