@@ -16,7 +16,7 @@ Practice pages for my [web design class](https://dmd1070.com/lessons/7-web-typog
 [Lovecraft](https://rawgit.com/emilyeserven/testwebsites/master/typography/lovecraft.html) | [Jaden](https://rawgit.com/emilyeserven/testwebsites/master/typography/smith.html)
 
 ### Ornette
-A practice website for my [web design class](https://dmd1070.com/) (Lesson 6), I challenged myself to write CSS without modifying any of the original HTML.
+A practice website for my [web design class](https://dmd1070.com/) (Lesson 6), I challenged myself to write CSS without modifying any of the [original HTML](https://rawgit.com/emilyeserven/testwebsites/master/ornette/original/index.html).
 
 [Ornette](https://rawgit.com/emilyeserven/testwebsites/master/ornette/index.html)
 
