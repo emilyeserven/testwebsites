@@ -8,17 +8,17 @@ An assignment from my [web design class](https://dmd1070.com/lessons/box-project
 
 This project was based off a [foundation](https://github.com/DMD1070/project-template) provided by the professor.
 
-[Box Project](https://rawgit.com/emilyeserven/testwebsites/master/boxproject/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/boxproject) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/boxproject/index.html)
 
 ### Typography
 Practice pages for my [web design class](https://dmd1070.com/lessons/7-web-typography.html#activity-type-setting-an-article) (Lesson 7). I attempted to put match fonts and visually appealing styling.
 
-[Lovecraft](https://rawgit.com/emilyeserven/testwebsites/master/typography/lovecraft.html) | [Jaden](https://rawgit.com/emilyeserven/testwebsites/master/typography/smith.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/typography) | [Lovecraft RawGit](https://rawgit.com/emilyeserven/testwebsites/master/typography/lovecraft.html) | [Jaden RawGit](https://rawgit.com/emilyeserven/testwebsites/master/typography/smith.html)
 
 ### Ornette
 A practice website for my [web design class](https://dmd1070.com/) (Lesson 6), I challenged myself to write CSS without modifying any of the [original HTML](https://rawgit.com/emilyeserven/testwebsites/master/ornette/original/index.html).
 
-[Ornette](https://rawgit.com/emilyeserven/testwebsites/master/ornette/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/ornette) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/ornette/index.html)
 
 ## JavaScript
 
@@ -26,4 +26,28 @@ A practice website for my [web design class](https://dmd1070.com/) (Lesson 6), I
 
 Inspired by an exercise from the Codecademy JavaScript track. Expanded to include event listeners, more functions, and DOM manipulation.
 
-[Rock, Paper, Scissors](https://rawgit.com/emilyeserven/testwebsites/master/js/codeacademy/rock-paper-scissors.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/codeacademy) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/codeacademy/rock-paper-scissors.html)
+
+### ThreeJS Tutorial
+
+A light test/demo of the `three.js` library's tutorial. It's just a spinning cube. I will probably return to this later.
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/threejs) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/threejs/tutorial.html)
+
+### The New Aesthetic Demo
+
+A light test/demo of the `newaesthetic.js` library. Doesn't work using RawGit, so to see full effects, you'd need to locally serve it on your machine. (Alternatively, you can just peek at [this static preview](https://raw.githubusercontent.com/emilyeserven/testwebsites/master/js/theNewAesthetic/itWorkedBefore.png).)
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/theNewAesthetic) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/theNewAesthetic/testproj.html)
+
+### A-Frame Demo
+
+A demo of A Frame, a framework for WebVR. Not much has been done with this project yet.
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/vr/aframe-test) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/vr/aframe-test/index.html)
+
+## AngularJS
+
+A practice website done while completing CodeSchool's "Shaping Up With AngularJS" course.
+
+[CodeSchool AngularJS](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codeschool/index.html)
