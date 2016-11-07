@@ -50,4 +50,4 @@ A demo of A Frame, a framework for WebVR. Not much has been done with this proje
 
 A practice website done while completing CodeSchool's "Shaping Up With AngularJS" course.
 
-[CodeSchool AngularJS](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codeschool/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codeschool/index.html)
