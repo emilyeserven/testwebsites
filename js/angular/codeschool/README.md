@@ -12,11 +12,15 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 *Actions:* Created a module, attached the module using [`ng-app`](http://emilyserven.net/ref-docs/angular-doc-directives.html#ng-app), and added a simple expression to the page.
 
+*Display:* "Hello, Angular!" appears on the page.
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/f5cd4f4610e80bce3091b3270e4bf5d2296250e3/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/f5cd4f4610e80bce3091b3270e4bf5d2296250e3/js/angular/codeschool/index.html)
 
 **1.4**
 
 *Actions:* Added a controller in the `JS` and attached it to the `HTML` page. Then, created a `gem` object and assigned it to the `product` property of the new controller (`StoreController`). Finally, used expressions in the `HTML` to display some properties of the `gem` object.
+
+*Display:* The name and price of the single `gem` show on opposite sides of the screen.
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/64409a6e1857c98b5d226febf99f09a3d1421cc8/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/64409a6e1857c98b5d226febf99f09a3d1421cc8/js/angular/codeschool/index.html)
 
@@ -24,11 +28,15 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 *Actions:* Used the [`ng-show` and `ng-hide`](http://emilyserven.net/ref-docs/angular-doc-directives.html#ng-show-and-ng-hide) directives to determine if a button (and the entire product) should be displayed or not.
 
+*Display:* The product displays on the screen, along with an `Add to Cart` button. This can be changed by manipulating the boolean values of `canPurchase` and `soldOut` in the `app.js` file.
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/4f8bbd7f4731668ee091a04b748baef2b0b043b6/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/4f8bbd7f4731668ee091a04b748baef2b0b043b6/js/angular/codeschool/index.html)
 
 **1.7**
 
 *Actions:* Created the `gems` array to replace the `gem` property. Replaced the reference in the controller (`StoreController`) and then used the [`ng-repeat`](http://emilyserven.net/ref-docs/angular-doc-directives.html#ng-repeat) directive to reduce redundancies in code.
+
+*Display:* Multiple gem names (Azurite, Bloodstone, and Zircon) and their prices are displayed as the `gems` array is iterated through. The `canPurchase` and `soldOut` properties plus the functionality associated with them have been deleted.
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/d3429c0abef0316a185e5d8b39ae60e6cdb8e81b/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/d3429c0abef0316a185e5d8b39ae60e6cdb8e81b/js/angular/codeschool/index.html)
 
