@@ -99,3 +99,15 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 **3.7**
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/5dc8244d0c8ac671c54e2e83eb381abd06943dd9/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/5dc8244d0c8ac671c54e2e83eb381abd06943dd9/js/angular/codeschool/index.html)
+
+**3.9**
+
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/b1a7eab2130fd04018192eb385cb506702df2c5c/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/b1a7eab2130fd04018192eb385cb506702df2c5c/js/angular/codeschool/index.html)
+
+**3.10**
+
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/27c8aa3488b1c88598d7c3e0139a17d72718a571/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/27c8aa3488b1c88598d7c3e0139a17d72718a571/js/angular/codeschool/index.html)
+
+**3.11**
+
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/b225ba128b0deb082a3a0aaedda7d06b7f3304d0/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/b225ba128b0deb082a3a0aaedda7d06b7f3304d0/js/angular/codeschool/index.html)
