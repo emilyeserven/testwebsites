@@ -137,3 +137,14 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 #### 4.7
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/3affe9a3b097c26c96302d1e91c87062d43c9062/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/3affe9a3b097c26c96302d1e91c87062d43c9062/js/angular/codeschool/index.html)
+
+### Level 5
+
+#### 5.2
+
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/0afb6d01c66260a57eb6c0885f36c241d72279b7/js/angular/codeschool) |
+[RawGit](https://rawgit.com/emilyeserven/testwebsites/0afb6d01c66260a57eb6c0885f36c241d72279b7/js/angular/codeschool/index.html)
+
+#### 5.4
+
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/4003f3d71b6bafe1711374e2799981d719bf1282/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/4003f3d71b6bafe1711374e2799981d719bf1282/js/angular/codeschool/index.html)
