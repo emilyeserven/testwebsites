@@ -44,6 +44,10 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 **2.2**
 
+*Actions:* Deleted the `$` sign manually added before the price numeric value. After, added a [`currency`](http://emilyserven.net/ref-docs/angular-doc-filters.html#currency) filter to the `product.price` expression.
+
+*Display:* Nothing displays differently.
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/3366ab0f053aad2806758c55f3de817d6f3dc92a/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/3366ab0f053aad2806758c55f3de817d6f3dc92a/js/angular/codeschool/index.html)
 
 **2.3**
@@ -86,12 +90,12 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 **3.4**
 
-[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/d90efbbca2fd75b5346b54b3361f121e86ccea19/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/blob/d90efbbca2fd75b5346b54b3361f121e86ccea19/js/angular/codeschool/index.html)
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/d90efbbca2fd75b5346b54b3361f121e86ccea19/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/d90efbbca2fd75b5346b54b3361f121e86ccea19/js/angular/codeschool/index.html)
 
 **3.6**
 
-[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/272973004fef86df79305cfe7afa29901398f310/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/blob/272973004fef86df79305cfe7afa29901398f310/js/angular/codeschool/index.html)
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/272973004fef86df79305cfe7afa29901398f310/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/272973004fef86df79305cfe7afa29901398f310/js/angular/codeschool/index.html)
 
 **3.7**
 
-[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/5dc8244d0c8ac671c54e2e83eb381abd06943dd9/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/blob/5dc8244d0c8ac671c54e2e83eb381abd06943dd9/js/angular/codeschool/index.html)
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/5dc8244d0c8ac671c54e2e83eb381abd06943dd9/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/5dc8244d0c8ac671c54e2e83eb381abd06943dd9/js/angular/codeschool/index.html)
