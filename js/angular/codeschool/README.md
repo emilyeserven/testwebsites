@@ -110,4 +110,4 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 **3.11**
 
-[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/b225ba128b0deb082a3a0aaedda7d06b7f3304d0/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/b225ba128b0deb082a3a0aaedda7d06b7f3304d0/js/angular/codeschool/index.html)
+[GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/5c28cf6b9d5d1f9b3aa29ac61a439e4a28c973c5/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/5c28cf6b9d5d1f9b3aa29ac61a439e4a28c973c5/js/angular/codeschool/index.html)
