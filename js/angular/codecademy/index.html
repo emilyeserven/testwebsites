@@ -8,17 +8,17 @@
     <!-- Include the AngularJS library -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
   </head>
-  <body>
+  <body ng-app="myApp">
     <div class="header">
       <div class="container">
         <h1>Book End</h1>
       </div>
     </div>
 
-    <div class="main">
+    <div class="main" ng-controller="MainController">
       <div class="container">
 
-        <h1>
+        <h1> {{title}}
         </h1>
 
       </div>
