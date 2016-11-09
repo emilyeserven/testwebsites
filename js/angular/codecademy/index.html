@@ -20,8 +20,9 @@
 
         <h1>{{title}}</h1>
         <h2>{{promo}}</h2>
-        <p class="title">{{product.name}}</p>
-        <p class="price">{{product.price}}</p>
+        <p class="title">{{product.name | uppercase}}</p>
+        <p class="price">{{product.price | currency}}</p>
+        <p class="date">{{product.pubdate | date}}</p>
 
       </div>
     </div>

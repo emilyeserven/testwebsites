@@ -78,7 +78,8 @@ html, body {
    line-height: 80px;
    text-align: center;
    width: 80px;
- position: absolute;
+ position: relative;
+  float:right;
  top: -40px;
  right: 20px;
 }
