@@ -65,10 +65,10 @@ A practice website done while completing Codecademy's AngularJS 1.x course.
 
 A practice website done while completing Lynda.com's Angular 1 course.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/lynda) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/tree/master/js/angular/lynda)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/lynda) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/lynda/index.html)
 
 ### Character Select Screen
 
 An Angular practice website using pictures and bios of friends to fill out a "character selection" interface. Often would be seen in a video game.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/chara-select/index.html)
