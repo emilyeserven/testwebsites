@@ -17,12 +17,14 @@
 
     <div class="main" ng-controller="MainController">
       <div class="container">
-
-        <h1>{{title}}</h1>
-        <h2>{{promo}}</h2>
-        <p class="title">{{product.name | uppercase}}</p>
-        <p class="price">{{product.price | currency}}</p>
-        <p class="date">{{product.pubdate | date}}</p>
+        <div ng-repeat="product in products" class="col-md-6">
+  <div class="thumbnail">
+    <img src="img/the-book-of-trees.jpg">
+    <p class="title">{{ product.name }}</p>
+    <p class="price">{{ product.price | currency }}</p>
+    <p class="date">{{ product.pubdate | date }}</p>
+  </div>
+</div>
 
       </div>
     </div>
