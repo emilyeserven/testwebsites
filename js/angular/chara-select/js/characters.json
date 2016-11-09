@@ -15,14 +15,36 @@
                 "photo": "img/whatever.jpg"
             }
         ],
-        "stats": [ {
-            "str": "0",
-            "con": "0",
-            "dex": "0",
-            "int": "0",
-            "wis": "0",
-            "cha": "0"    
-        } ],
+        "statsStr": "7",
+        "statsCon": "9",
+        "statsDex": "7",
+        "statsInt": "10",
+        "statsWis": "10",
+        "statsCha": "9",
+        "skills": ["Skill A", "Skill B"]
+    },
+    {
+        "name": "John Doe",
+        "class": "Athlete",
+        "alignment": "Chaotic Evil",
+        "equipment": [
+            {
+                "object": "Soccer Ball",
+                "photo": "img/whatever.jpg"
+            }, {
+                "object": "FitBit",
+                "photo": "img/whatever.jpg"
+            }, {
+                "object": "Sneakers",
+                "photo": "img/whatever.jpg"
+            }
+        ],
+        "statsStr": "11",
+        "statsCon": "11",
+        "statsDex": "10",
+        "statsInt": "7",
+        "statsWis": "7",
+        "statsCha": "9",
         "skills": ["Skill A", "Skill B"]
     }
 ]
