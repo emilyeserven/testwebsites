@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Emily",
+        "class": "Web Developer",
+        "alignment": "Lawful Good",
+        "equipment": [
+            {
+                "object": "Laptop",
+                "photo": "img/whatever.jpg"
+            }, {
+                "object": "Android Phone",
+                "photo": "img/whatever.jpg"
+            }, {
+                "object": "PC",
+                "photo": "img/whatever.jpg"
+            }
+        ],
+        "stats": [ {
+            "str": "0",
+            "con": "0",
+            "dex": "0",
+            "int": "0",
+            "wis": "0",
+            "cha": "0"    
+        } ],
+        "skills": ["Skill A", "Skill B"]
+    }
+]
