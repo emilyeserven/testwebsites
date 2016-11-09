@@ -1,20 +1,21 @@
-<div class="character-holder" ng-repeat="character in characters.stats">
-    <div class="baseStats">
-
+<div class="row character-holder" ng-repeat="character in characters.stats">
+    <div class="base-stats col-xs-3">
+        <img ng-src="{{character.photo}}" /><br />
         <h2>Name: {{ character.name }}</h2>
         <h3>Class: {{ character.class }}</h3>
         <p>
             Alignment: {{ character.alignment }}
         </p>
     </div>
-    <div class="equipment">
+    <div class="equipment col-xs-3">
         <ul>
             <li ng-repeat="equip in character.equipment">
+                <img ng-src="{{equip.photo}}" width="50px" /><br />
                 <b>{{equip.object}}</b>
             </li>
         </ul>
     </div>
-    <div class="stats">
+    <div class="stats col-xs-3">
         <ul>
             <li>
                 <b>STR:</b> {{character.statsStr}}
@@ -37,7 +38,7 @@
         </ul>
 
     </div>
-    <div class="skills">
+    <div class="skills col-xs-3">
         <ul>
             <li ng-repeat="skill in character.skills">
                 {{skill}}

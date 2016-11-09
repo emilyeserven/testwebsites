@@ -1,0 +1,8 @@
+.character-holder {
+    border: 2px #333 solid;
+    padding: 10px;
+    margin-bottom:5px;
+}
+.equipment li {
+    margin-bottom: 10px;
+}
