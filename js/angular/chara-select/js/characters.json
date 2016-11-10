@@ -4,6 +4,8 @@
         "class": "Web Developer",
         "photo": "img/propic.jpg",
         "alignment": "Lawful Good",
+        "shortBio": "I really like to develop stuff.",
+        "longBio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet tempor diam. Donec consequat, velit interdum blandit condimentum, mi ligula molestie nisi, et eleifend tellus mi vel lorem. Nulla facilisi. Vivamus condimentum vehicula urna in ullamcorper. Mauris molestie enim et sem semper, eget sagittis odio fringilla. Nulla eu sapien id sem ultricies interdum vel at nunc. Quisque tristique risus in risus aliquet, sed ullamcorper sem faucibus.",
         "equipment": [
             {
                 "object": "Laptop",
@@ -22,13 +24,15 @@
         "statsInt": "10",
         "statsWis": "10",
         "statsCha": "9",
-        "skills": ["Skill A", "Skill B"]
+        "skills": ["Skill A", "Skill B", "Skill C", "Skill D", "Skill E", "Skill F"]
     },
     {
         "name": "John Doe",
         "class": "Athlete",
         "photo": "img/propic.jpg",
         "alignment": "Chaotic Evil",
+        "shortBio": "I really like to develop stuff.",
+        "longBio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet tempor diam. Donec consequat, velit interdum blandit condimentum, mi ligula molestie nisi, et eleifend tellus mi vel lorem. Nulla facilisi. Vivamus condimentum vehicula urna in ullamcorper. Mauris molestie enim et sem semper, eget sagittis odio fringilla. Nulla eu sapien id sem ultricies interdum vel at nunc. Quisque tristique risus in risus aliquet, sed ullamcorper sem faucibus.",
         "equipment": [
             {
                 "object": "Soccer Ball",
@@ -47,6 +51,6 @@
         "statsInt": "7",
         "statsWis": "7",
         "statsCha": "9",
-        "skills": ["Skill A", "Skill B"]
+        "skills": ["Skill A", "Skill B", "Skill C", "Skill D", "Skill E", "Skill F"]
     }
 ]
