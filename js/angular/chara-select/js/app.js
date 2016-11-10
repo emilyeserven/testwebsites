@@ -1,5 +1,5 @@
 (function() {
-    var app = angular.module("charaSelect", []);
+    var app = angular.module('charaSelect', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 
     app.directive('charaDisplay', function() {
         return {
@@ -15,5 +15,5 @@
             controllerAs: 'characters'
         };
     });
-
+    angular.module('ModalDemoApp', ['ui.bootstrap']);
 })();
