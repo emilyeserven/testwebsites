@@ -1,6 +1,5 @@
 (function() {
     var app = angular.module('charaSelect', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-
     app.directive('charaDisplay', function() {
         return {
             restrict: 'E',

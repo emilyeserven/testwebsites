@@ -24,31 +24,31 @@
         "statsInt": "10",
         "statsWis": "10",
         "statsCha": "9",
-        "skills": ["Skill A", "Skill B", "Skill C", "Skill D", "Skill E", "Skill F"]
+        "skills": ["Digital Fluency", "Anime Analysis", "Programming", "UX/UI Design", "Photography", "Quick to Sleep"]
     },
     {
-        "name": "John Doe",
-        "class": "Athlete",
+        "name": "Sergio",
+        "class": "IT Assistant",
         "photo": "img/propic.jpg",
-        "alignment": "Chaotic Evil",
-        "shortBio": "I really like to develop stuff.",
+        "alignment": "Chaotic Neutral",
+        "shortBio": "High key loud goofy, low key shy and quiet.",
         "longBio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet tempor diam. Donec consequat, velit interdum blandit condimentum, mi ligula molestie nisi, et eleifend tellus mi vel lorem. Nulla facilisi. Vivamus condimentum vehicula urna in ullamcorper. Mauris molestie enim et sem semper, eget sagittis odio fringilla. Nulla eu sapien id sem ultricies interdum vel at nunc. Quisque tristique risus in risus aliquet, sed ullamcorper sem faucibus.",
         "equipment": [
             {
-                "object": "Soccer Ball",
+                "object": "Knife",
                 "photo": "img/equipment.jpg"
             }, {
-                "object": "FitBit",
+                "object": "Extra Cables and Portable Power",
                 "photo": "img/equipment.jpg"
             }, {
-                "object": "Sneakers",
+                "object": "Tabletop Games",
                 "photo": "img/equipment.jpg"
             }
         ],
-        "statsStr": "11",
+        "statsStr": "8",
         "statsCon": "11",
-        "statsDex": "10",
-        "statsInt": "7",
+        "statsDex": "11",
+        "statsInt": "6",
         "statsWis": "7",
         "statsCha": "9",
         "skills": ["Skill A", "Skill B", "Skill C", "Skill D", "Skill E", "Skill F"]
