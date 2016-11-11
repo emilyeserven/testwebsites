@@ -1,9 +1,10 @@
 (function() {
     var app = angular.module('charaSelect', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+
     app.directive('charaDisplay', function() {
         return {
             restrict: 'E',
-            templateUrl: 'chara-display.html',
+            templateUrl: 'partials/chara-display.html',
             controller: ['$http', function($http) {
                 var character = this;
                 character.stats = [];
@@ -12,6 +13,24 @@
                 });
             }],
             controllerAs: 'characters'
+        };
+    });
+    app.directive('charaEquipment', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/chara-equipment.html'
+        };
+    });
+    app.directive('charaSkills', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/chara-skills.html'
+        };
+    });
+    app.directive('charaStats', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/chara-stats.html'
         };
     });
     angular.module('ModalDemoApp', ['ui.bootstrap']);

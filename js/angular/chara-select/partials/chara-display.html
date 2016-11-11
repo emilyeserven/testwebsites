@@ -1,0 +1,25 @@
+<div class="row character-holder" ng-repeat="character in characters.stats">
+    <div class="base-stats col-xs-4">
+        <img ng-src="{{character.photo}}" /><br />
+        <h2>Name: {{ character.name }}</h2>
+        <h3>Class: {{ character.class }}</h3>
+        <p>
+            Alignment: {{ character.alignment }}
+        </p>
+        <p>
+            <em>{{ character.shortBio }}</em>
+        </p>
+        <p>
+            {{character.longBio}}
+        </p>
+    </div>
+    <div class="equipment col-xs-4">
+        <chara-equipment></chara-equipment>
+    </div>
+    <div class="stats-col col-xs-4">
+        <chara-stats></chara-stats>
+        <div class="skills">
+            <chara-skills></chara-skills>
+        </div>
+    </div>
+</div>
