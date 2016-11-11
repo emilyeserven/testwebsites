@@ -33,5 +33,17 @@
             templateUrl: 'partials/chara-stats.html'
         };
     });
+    app.directive('charaBoxes', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/chara-boxes.html'
+        };
+    });
+    app.directive('teamCurrent', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/team-current.html'
+        };
+    });
     angular.module('ModalDemoApp', ['ui.bootstrap']);
 })();

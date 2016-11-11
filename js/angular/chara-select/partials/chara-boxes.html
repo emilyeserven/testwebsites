@@ -1,0 +1,14 @@
+<div class="row character-row">
+    <div class="col-xs-3" ng-repeat="character in characters.stats">
+        <div class="character-card">
+            <img ng-src="{{character.photo}}" />
+            <h2>{{ character.name }}</h2>
+            <h3>{{ character.class }}</h3>
+            <div class="character-buttons">
+                <a href="#" class="col-xs-6 chara-card-button bio-button">Bio</a>
+                <a href="#" class="col-xs-6 chara-card-button add-button">Add</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
