@@ -52,6 +52,8 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 #### 2.2
 
+![Result of Exercise 2.2 Screenshot](screenshots/2.2.png)
+
 *Actions:* Deleted the `$` sign manually added before the price numeric value. After, added a [`currency`](http://emilyserven.net/ref-docs/angular-doc-filters.html#currency) filter to the `product.price` expression.
 
 *Display:* Nothing displays differently.
@@ -60,29 +62,43 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 #### 2.3
 
+![Result of Exercise 2.3 Screenshot](screenshots/2.3.png)
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/f96371e1aa5f6d30a1faf7a5327e4563c4456a17/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/f96371e1aa5f6d30a1faf7a5327e4563c4456a17/js/angular/codeschool/index.html)
 
 #### 2.4
+
+![Result of Exercise 2.4 Screenshot](screenshots/2.4.png)
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/58d7584e5e4c7b7f06d20c36a6f0ec5f59eb4ecd/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/58d7584e5e4c7b7f06d20c36a6f0ec5f59eb4ecd/js/angular/codeschool/index.html)
 
 #### 2.5
 
+![Result of Exercise 2.5 Screenshot](screenshots/2.5.png)
+
 [GitHub](https://github.com/emilyeserven/testwebsites/tree/ff994238ba6313ae173bbcc7bdf996c399a05ffe/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/ff994238ba6313ae173bbcc7bdf996c399a05ffe/js/angular/codeschool/index.html)
 
 #### 2.7
+
+![Result of Exercise 2.7 Screenshot](screenshots/2.7.png)
 
 [GitHub](https://github.com/emilyeserven/testwebsites/tree/639befebbc415d19c3f12db8d641275f8ec0f1cd/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/639befebbc415d19c3f12db8d641275f8ec0f1cd/js/angular/codeschool/index.html)
 
 #### 2.8
 
+![Result of Exercise 2.8 Screenshot](screenshots/2.8.png)
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/a58a3a9be88375460c3e8216c9f04e9d6cc6d8f6/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/a58a3a9be88375460c3e8216c9f04e9d6cc6d8f6/js/angular/codeschool/index.html)
 
 #### 2.9
 
+![Result of Exercise 2.9 Screenshot](screenshots/2.9.png)
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/761c7bd4ad93948477449778e7ee45e6167eaaeb/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/761c7bd4ad93948477449778e7ee45e6167eaaeb/js/angular/codeschool/index.html)
 
 #### 2.10
+
+![Result of Exercise 2.10 Screenshot](screenshots/2.10.png)
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/b62a4a46b75d2e3d69f0c408fb780375e0bc31a3/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/b62a4a46b75d2e3d69f0c408fb780375e0bc31a3/js/angular/codeschool/index.html)
 
