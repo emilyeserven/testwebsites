@@ -10,6 +10,8 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 #### 1.2
 
+![Result of Exercise 1.2 Screenshot](screenshots/1.2.png)
+
 *Actions:* Created a module, attached the module using [`ng-app`](http://emilyserven.net/ref-docs/angular-doc-directives.html#ng-app), and added a simple expression to the page.
 
 *Display:* "Hello, Angular!" appears on the page.
