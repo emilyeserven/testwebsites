@@ -71,4 +71,4 @@ A practice website done while completing Lynda.com's Angular 1 course.
 
 An Angular practice website using pictures and bios of friends to fill out a "character selection" interface. Often would be seen in a video game.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/chara-select/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/chara-select/index.html) | [Design Prototype](https://xd.adobe.com/view/3b08ed02-f5b2-466a-bac0-36a73406dca3/screen/6adad8e9-9bc5-4838-9b7d-ec73c0b0e083/Home-Page/)
