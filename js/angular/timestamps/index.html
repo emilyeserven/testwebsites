@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timestamper</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="timestamper">
+    <div class="button time-button">
+        START 
+    </div>
+    <div class="button advmode-button">
+        TAGS ARE ON
+    </div>
+    <div class="timestamp-holder">
+        <div class="started-time">
+            Started at {{begin-time}}
+        </div>
+        <div class="timestamps">
+            <ul>
+                <li>
+                    <span class="relative-stamp">{{relative-stamp}}</span>&nbsp;<span class="stamp-tag">{{stamp-tag}}</span> - <span class="real-stamp">{{real-stamp}}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ended-time">
+            Started at {{end-time}}
+        </div>
+    </div>
+</body>
+</html>
