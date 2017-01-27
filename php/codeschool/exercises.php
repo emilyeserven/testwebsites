@@ -1,5 +1,5 @@
 <?php
-
+  $city = 'Tokyo';
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,7 @@
       <div class="sidebar">
         <div class="info">
           <ul>
-            <li>  </li>
+            <li><?php echo $city; ?></li>
           </ul>
         </div>
         <div class="details">
