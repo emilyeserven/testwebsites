@@ -64,11 +64,19 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 ![Result of Exercise 2.3 Screenshot](screenshots/2.3.png)
 
+*Actions:* Added an image with Angular using `ng-src`. `ng-src` was used so that the images could be dynamically populated via `ng-repeat`.
+
+*Display:* The main image now displays for each gem.
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/f96371e1aa5f6d30a1faf7a5327e4563c4456a17/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/f96371e1aa5f6d30a1faf7a5327e4563c4456a17/js/angular/codeschool/index.html)
 
 #### 2.4
 
 ![Result of Exercise 2.4 Screenshot](screenshots/2.4.png)
+
+*Actions:* Added the sub-images using a `ng-src` within `ng-repeat`. The repeat iterates through `product.images`.
+
+*Display:* "Gallery Images" now display under the main one.
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/58d7584e5e4c7b7f06d20c36a6f0ec5f59eb4ecd/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/58d7584e5e4c7b7f06d20c36a6f0ec5f59eb4ecd/js/angular/codeschool/index.html)
 
@@ -76,11 +84,19 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 ![Result of Exercise 2.5 Screenshot](screenshots/2.5.png)
 
+*Actions:* Add an `ng-show` to the gallery to ensure that it only shows as long as gallery images exist.
+
+*Display:* Nothing displays differently.
+
 [GitHub](https://github.com/emilyeserven/testwebsites/tree/ff994238ba6313ae173bbcc7bdf996c399a05ffe/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/ff994238ba6313ae173bbcc7bdf996c399a05ffe/js/angular/codeschool/index.html)
 
 #### 2.7
 
 ![Result of Exercise 2.7 Screenshot](screenshots/2.7.png)
+
+*Actions:* A controller, `TabController` was created. Within it, a variable `tab` was initialized and set to 1. A method called `setTab` was created so that when a tab was clicked, it would execute the method, which would then set the value of the `tab` variable. Another method called `isSet` was created and would return the content depending on the value of the `tab` variable.
+
+*Display:* Nothing displays differently, changes were only made in the JS.
 
 [GitHub](https://github.com/emilyeserven/testwebsites/tree/639befebbc415d19c3f12db8d641275f8ec0f1cd/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/639befebbc415d19c3f12db8d641275f8ec0f1cd/js/angular/codeschool/index.html)
 
@@ -88,17 +104,29 @@ Basic notes were taken in my personal documentation site, [Refs&Docs](http://emi
 
 ![Result of Exercise 2.8 Screenshot](screenshots/2.8.png)
 
+*Actions:*
+
+*Display:*
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/a58a3a9be88375460c3e8216c9f04e9d6cc6d8f6/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/a58a3a9be88375460c3e8216c9f04e9d6cc6d8f6/js/angular/codeschool/index.html)
 
 #### 2.9
 
 ![Result of Exercise 2.9 Screenshot](screenshots/2.9.png)
 
+*Actions:*
+
+*Display:*
+
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/761c7bd4ad93948477449778e7ee45e6167eaaeb/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/761c7bd4ad93948477449778e7ee45e6167eaaeb/js/angular/codeschool/index.html)
 
 #### 2.10
 
 ![Result of Exercise 2.10 Screenshot](screenshots/2.10.png)
+
+*Actions:*
+
+*Display:*
 
 [GitHub Commit](https://github.com/emilyeserven/testwebsites/tree/b62a4a46b75d2e3d69f0c408fb780375e0bc31a3/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/b62a4a46b75d2e3d69f0c408fb780375e0bc31a3/js/angular/codeschool/index.html)
 
