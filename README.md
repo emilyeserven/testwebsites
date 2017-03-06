@@ -1,6 +1,8 @@
 # About this Repository
 Any of my non-WordPress experimental websites will get thrown into this repo. Feel free to critique and nitpick in the Issues, the whole purpose of this is to document my learning and discover more. :)
 
+[Static](#static) | [JavaScript](#javascript) | [AngularJS](#angularjs)
+
 ## Static
 
 ### Box Project
