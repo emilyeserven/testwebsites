@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-calm">
+        <button class="button">Hello</button>
+        <h1 class="title">Sandbox Element Toss</h1>
+      </ion-header-bar>
+
+      <ion-tabs>
+        <ion-tab badge="20" badge-style="badge-assertive" icon="ion-home" title="Home"></ion-tab>
+        <ion-tab icon="ion-help-circled" title="Help"></ion-tab>
+        <ion-tab icon="ion-search" title="Search"></ion-tab>
+      </ion-tabs>
+      <!--
+      <div class="bar bar-subheader">
+        <h2>Sub Header</h2>
+      </div> -->
+      <ion-content class="padding has-subheader">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat enim ut purus mattis, vel tristique dui imperdiet. In non rhoncus risus, ut placerat sem. Donec quis dapibus nisl, sagittis mollis lorem. Quisque velit nisl, egestas in ligula id, hendrerit volutpat quam. Fusce aliquam finibus justo, eu egestas est ullamcorper non. Quisque vitae mi quis enim mollis rhoncus. Mauris eget tempor sapien. Cras sit amet eleifend odio.
+        </p>
+        <button class="button button-outline button-positive">Hello</button>
+        <button class="button button-positive">Hello</button>
+
+        <h2>Button Bar</h2>
+        <div class="button-bar">
+          <button class="button button-outline button-positive">Hello</button>
+          <button class="button button-outline button-positive">Hello</button>
+          <button class="button button-outline button-positive">Hello</button>
+        </div>
+
+        <h2>Ionicons</h2>
+        <p>
+          <p><i class="icon ion-ionic"></i> Ionic</p>
+          <h3><i class="icon ion-ionic"></i> Ionic with h3</h3>
+          <p><button class="button button-calm"><i class="icon ion-ionic"></i> Ionic Icon Button</button></p>
+          <p><button class="icon icon-left ion-ionic button button-calm">Ionic Icon Button method 2</button></p>
+        </p>
+
+        <h2>Lists</h2>
+        <ion-list>
+          <ion-item href="#">??</ion-item>
+          <ion-item class="item item-avatar"><img src="http://placehold.it/100x100" />Ey</ion-item>
+          <ion-item class="item-button-right">Sup<button class="button button-assertive"><i class="icon ion-person"></i></button></ion-item>
+          <ion-item>Meow</ion-item>
+          <ion-item>Subwoof</ion-item>
+        </ion-list>
+
+        <h2>Cards</h2>
+        <ion-list type="card">
+          <ion-item>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat enim ut purus mattis, vel tristique dui imperdiet. In non rhoncus risus, ut placerat sem. Donec quis dapibus nisl, sagittis mollis lorem. Quisque velit nisl, egestas in ligula id, hendrerit volutpat quam. Fusce aliquam finibus justo, eu egestas est ullamcorper non. Quisque vitae mi quis enim mollis rhoncus. Mauris eget tempor sapien. Cras sit amet eleifend odio.
+          </ion-item>
+        </ion-list>
+
+        <h2>Inset List</h2>
+        <ion-list type="list-inset">
+          <ion-item class="item-divider">
+            Header
+          </ion-item>
+          <ion-item>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat enim ut purus mattis, vel tristique dui imperdiet. In non rhoncus risus, ut placerat sem. Donec quis dapibus nisl, sagittis mollis lorem. Quisque velit nisl, egestas in ligula id, hendrerit volutpat quam. Fusce aliquam finibus justo, eu egestas est ullamcorper non. Quisque vitae mi quis enim mollis rhoncus. Mauris eget tempor sapien. Cras sit amet eleifend odio.
+          </ion-item>
+          <ion-item class="item-image">
+            <img src="http://placehold.it/600x200" />
+          </ion-item>
+          <ion-item class="item-image item-body">
+            <img src="http://placehold.it/600x200" />
+            <p>
+              In non rhoncus risus, ut placerat sem. Donec quis dapibus nisl, sagittis mollis lorem. Quisque velit nisl, egestas in ligula id, hendrerit volutpat quam.
+            </p>
+          </ion-item>
+          <ion-item class="item-icon-left item-text-wrap">
+            <i class="icon ion-home"></i>
+            Curabitur placerat enim ut purus mattis, vel tristique dui imperdiet. In non rhoncus risus, ut placerat sem. Donec quis dapibus nisl.
+          </ion-item>
+          <ion-item class="item-divider">
+            Footer
+          </ion-item>
+        </ion-list>
+
+        <h2>Form Elements</h2>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">First Name</span>
+            <input type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Last Name</span>
+            <input type="text">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Mysterious Name</span>
+            <input type="text">
+          </label>
+        </div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
