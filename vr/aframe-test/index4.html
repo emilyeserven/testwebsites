@@ -10,21 +10,49 @@
     <script>
       AFRAME.registerComponent('log', {
         schema: {
-          message: {type: 'string', default: 'Hello, World!'}
+          event: {type: 'string', default: ''},
+          message: {type: 'string', default: 'Hello, World!'},
         },
+
         init: function() {
-            console.log(this.data.message);
+          //Closure to access fresh 'this.data' from event handler context.
+          var self = this;
+          this.eventHandlerFn = function(){console.log(self.data.message);};
+        },
+
+        update: function(oldData) {
+          var data = this.data; //component property values
+          var el = this.el; // Reference to the component's entity
+
+          if (oldData.event && data.event !== oldData.event) {
+            // This will log the 'message' when the entity emits the 'event'.
+            el.removeEventListener(oldData.event, this.eventHandlerFn);
+          }
+          if (data.event) {
+            el.addEventListener(data.event, this.eventHandlerFn);
+          } else {
+            console.log(data.message);
+          }
         }
       });
+
     </script>
     <!-- Using tutorial from: https://aframe.io/docs/0.5.0/guides/ -->
     <a-scene>
       <a-assets>
         <img id="skyTexture" src="img/streetsky.jpg">
       </a-assets>
-      <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" color="#A8C5F6"vsrc="#boxTexture" log="message: Here come dat boi">
+      <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" color="#A8C5F6"vsrc="#boxTexture" log="event: anEvent; message: Here come dat boi">
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.2 -5"></a-animation>
+          <!--
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation> -->
+      </a-box>
+      <a-box position="0 2 5" rotation="0 45 45" scale="2 2 2" color="#C8A536"vsrc="#boxTexture" log="message: Oh shoot waddup">
+        <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+          to="0 2.2 5"></a-animation>
           <!--
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
         <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>

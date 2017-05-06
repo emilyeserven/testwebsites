@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img src="https://rawgit.com/rdub80/Ferguson-VR-Hackathon/master/demos/assets/texture.jpg" id="texture" />
+        <img src="https://rawgit.com/rdub80/Ferguson-VR-Hackathon/master/demos/assets/textureB.jpg" id="textureB" />
+        <img src="https://rawgit.com/rdub80/Ferguson-VR-Hackathon/master/demos/assets/textureC.jpg" id="textureC" />
+
+        <a-mixin id="box"
+          geometry="primitive:box; width:0.75; height:0.5; depth:0.65;"
+          material="color: #fff;roughness: 0.7;metalness: 0.5;"
+          >
+        </a-mixin>
+      </a-assets>
+      <a-light
+        type="ambient"
+        color="#edb9e9"></a-light>
+      <a-light
+        type="directional"
+        color="#fff"
+        intensity="1"></a-light>
+      <a-sky
+        src="https://rawgit.com/rdub80/Ferguson-VR-Hackathon/master/demos/assets/gradient.png"></a-sky>
+      <a-entity
+          mixin="box"
+          position="0 2 -2"
+          rotation="0 30 30"
+          material="src:#texture;
+          color: #fff;
+            roughness: 0.7;
+            metalness: 0.5;">
+        <a-animation
+          attribute="rotation"
+          from="20 0 0"
+          to="20 360 0"
+          direction="alternate"
+          dur="4000"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+      </a-entity>
+      <a-entity
+          mixin="box"
+          position="3 3 -5"
+          rotation="15 0 45"
+          material="src:#texture;
+          color: #fff;
+            roughness: 0.7;
+            metalness: 0.5;">
+        <a-animation
+          attribute="rotation"
+          from="15 0 0"
+          to="15 360 0"
+          direction="alternate"
+          dur="6000"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
