@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="vrbg" src="../img/bg.png">
+        <a-mixin id="cubewall" geometry="primitive: box; depth: 1.5; height: 1.5; width: 0.10; color: #eee"></a-mixin>
+        <a-mixin id="wallhalf" geometry="depth: .44; height: 1.5; width: 0.10"></a-mixin>
+      </a-assets>
+      <a-entity mixin="cubewall" position="-0.80 0.75 0.15" material="" scale="" visible=""></a-entity>
+      <a-entity mixin="cubewall" position="0.6 0.75 0.15" material="" scale="" visible=""></a-entity>
+      <a-entity mixin="cubewall" position="-0.10 0.75 0.95" rotation="0 90 0" material="" scale="" visible=""></a-entity>
+      <a-entity mixin="cubewall wallhalf" position="-0.63 0.75 -0.65" rotation="0 90 0" material="" scale="" visible=""></a-entity>
+      <a-entity mixin="cubewall wallhalf" position="0.43 0.75 -0.65" rotation="0 90 0" material="" scale="" visible=""></a-entity>
+      <a-sky src="#vrbg" repeat="100"></a-sky>
+    </a-scene>
+  </body>
+</html>
