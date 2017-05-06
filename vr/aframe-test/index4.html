@@ -7,23 +7,27 @@
     <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
   </head>
   <body>
+    <script>
+      AFRAME.registerComponent('hello-world', {
+        init: function() {
+            console.log('Hello, World!');
+        }
+      });
+    </script>
     <!-- Using tutorial from: https://aframe.io/docs/0.5.0/guides/ -->
     <a-scene>
       <a-assets>
         <img id="skyTexture" src="img/streetsky.jpg">
       </a-assets>
-      <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" color="#A2C5F6"vsrc="#boxTexture">
+      <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" color="#A8C5F6"vsrc="#boxTexture" hello-world>
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.2 -5"></a-animation>
+          <!--
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
         <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
-        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
-      </a-box>
-      <a-box position="0 2 5" rotation="0 45 45" scale="2 2 2" color="#D2E4B3" src="#boxTexture">
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation> -->
       </a-box>
       <a-sky src="#skyTexture"></a-sky>
-      <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4"></a-light>
       <a-camera>
         <a-cursor></a-cursor>
       </a-camera>
