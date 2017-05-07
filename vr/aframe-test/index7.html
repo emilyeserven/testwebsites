@@ -18,6 +18,10 @@
         <img id="ceiling" src="img/ceiling.png">
         <a-asset-item id="potato-obj" src="img/potatoes.obj"></a-asset-item>
         <a-asset-item id="potato-mtl" src="img/potatoes.mtl"></a-asset-item>
+        <a-asset-item id="monkey-obj" src="img/Monkey.obj"></a-asset-item>
+        <a-asset-item id="balloons-obj" src="img/ObjBalloons.obj"></a-asset-item>
+        <a-asset-item id="man-obj" src="img/autumn_casualman_04_lowpoly2k.obj"></a-asset-item>
+        <a-asset-item id="pc-obj" src="img/lpc1.obj"></a-asset-item>
         <a-mixin id="cubewall" material="src: #cube" geometry="primitive: box; depth: 1.5; height: 1.5; width: 0.10; color: #eee"></a-mixin>
         <a-mixin id="cubelongwall" material="src: #cube" geometry="primitive: box; depth: 7.5; height: 1.5; width: 0.10; color: #eee"></a-mixin>
         <a-mixin id="cubebigwall" geometry="primitive: box; depth: 15; height: 4; width: 0.10; color: #aaaaaa"></a-mixin>
@@ -25,6 +29,7 @@
         <a-mixin id="cubebigshortwallB" geometry="primitive: box; depth: 15; height: 2.5; width: 0.10; color: #aaaaaa"></a-mixin>
         <a-mixin id="cubebigshortwallC" geometry="primitive: box; depth: 15; height: 1.5; width: 0.10; color: #aaaaaa"></a-mixin>
         <a-mixin id="wallhalf" src="#cube" geometry="depth: .44; height: 1.5; width: 0.10"></a-mixin>
+        <a-mixin id="desk" src="#cube" geometry="depth: .46; height: 1.34; width: 0.03"></a-mixin>
       </a-assets>
       <!-- A1 -->
       <a-entity mixin="cubewall" position="-3.80 0.75 1.75" material="" scale="" visible=""></a-entity>
@@ -59,6 +64,7 @@
       <a-entity mixin="cubewall" position="-0.80 0.75 0.15" material="" scale="" visible=""></a-entity>
       <a-entity mixin="cubewall" position="0.6 0.75 0.15" material="" scale="" visible=""></a-entity>
       <a-entity mixin="cubewall wallhalf" position="-0.63 0.75 -0.65" rotation="0 90 0" material="" scale="" visible=""></a-entity>
+      <a-entity mixin="cubewall desk" position="-0.1 .74 0.65" rotation="0 0 90" material="" scale="" visible=""></a-entity>
       <a-entity mixin="cubewall wallhalf" position="0.43 0.75 -0.65" rotation="0 90 0" material="" scale="" visible=""></a-entity>
       <!-- B4 -->
       <a-entity mixin="cubewall" position="2.10 0.75 0.15" material="" scale="" visible=""></a-entity>
@@ -71,6 +77,9 @@
       <a-entity mixin="cubewall wallhalf" position="2.37 0.75 -0.65" rotation="0 90 0" material="" scale="" visible=""></a-entity>
 
       <a-entity obj-model="obj: #potato-obj; mtl: #potato-mtl" position="-.5 0 .75" rotation="0 90 0" scale="0.01 0.01 0.01"></a-entity>
+      <a-entity obj-model="obj: #pc-obj" position=".5 0.75 .45" rotation="0 180 0" scale="0.0075 0.0075 0.0075"></a-entity>
+      <a-entity obj-model="obj: #monkey-obj" position="-.5 0 .75" rotation="0 90 0" scale="0.01 0.01 0.01"></a-entity>
+        <a-entity obj-model="obj: #man-obj" position=".5 1.51 3.38" rotation="160.00 18.28 0" scale="0.5 0.5 0.5"></a-entity>
 
       <a-plane material="src: #carpet; repeat: 20 20" rotation="-90 0 0" width="15.2" height="8" color="#888888" repeat="20 20" position="0 0 1.04"></a-plane>
       <a-entity material="src: #ceiling; repeat: 10 10" geometry="primitive:box; depth: 8; height: 15.20; width: 0.10" rotation="0 0 90" position="0 4 1.02" color="#888888"></a-entity>
