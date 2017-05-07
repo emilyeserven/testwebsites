@@ -31,10 +31,17 @@ function draw() {
     ellipse(276,155,45,45);
     fill(255);
     ellipse(288,150,14,14);
-    fill(0);
-    ellipse(288,150,3,3);
+    fill(075);
+    rect(274,148,28,3);
     fill(153);
     ellipse(263,148,5,5);
     ellipse(296,130,4,4);
     ellipse(305,162,3,3);
+
+    //Boink
+    fill(0);
+    stroke(2);
+    line(200,400,210,395);
+    line(198,410,208,405);
+    line(196,420,206,415);
 }
