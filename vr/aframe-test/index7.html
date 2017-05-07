@@ -5,6 +5,19 @@
     <title>Hello, World! - A-Frame</title>
     <meta name="description" content="Hello, World! - A-Frame">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    <script>AFRAME.registerComponent('clickable', {
+        	init: function () {
+	          	var el = this.el;
+	          	el.addEventListener('click', function () {
+                  balloonwall.emit('animateMeNow');
+	          	});
+	        }
+      	});
+    </script>
   </head>
   <body>
     <a-scene>
@@ -78,16 +91,21 @@
       <a-entity obj-model="obj: #potato-obj; mtl: #potato-mtl" position="-.5 0 .75" rotation="0 90 0" scale="0.01 0.01 0.01"></a-entity>
       <a-entity obj-model="obj: #pc-obj" position=".5 0.75 .45" rotation="0 180 0" scale="0.0075 0.0075 0.0075"></a-entity>
       <a-entity obj-model="obj: #monkey-obj" position="-.5 0 .75" rotation="0 90 0" scale="0.01 0.01 0.01"></a-entity>
-        <a-entity obj-model="obj: #man-obj" position=".5 1.51 3.38" rotation="160.00 18.28 0" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity obj-model="obj: #man-obj" position=".5 1.51 3.38" rotation="160.00 18.28 0" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity obj-model="obj: #balloons-obj" position=".5 -3.8 7.8" rotation="0 18.28 0" scale="0.25 0.25 0.25">
+        <a-animation begin="animateMeNow" attribute="position" from=".5 -3.8 7.8" to=".5 3.8 7.8" dur="5000" repeat="indefinite"></a-animation>
+      </a-entity>
 
       <a-plane material="src: #carpet; repeat: 20 20" rotation="-90 0 0" width="15.2" height="8" color="#888888" repeat="20 20" position="0 0 1.04"></a-plane>
       <a-entity material="src: #ceiling; repeat: 10 10" geometry="primitive:box; depth: 8; height: 15.20; width: 0.10" rotation="0 0 90" position="0 4 1.02" color="#888888"></a-entity>
       <a-entity mixin="cubebigwall" position="0 2 -3" rotation="0 90 0" material="src: #wall; repeat: 8 5" scale="" visible=""></a-entity>
       <a-entity mixin="cubebigshortwallC" position="0 .5 5" rotation="0 90 0" material="src: #wall; repeat: 8 5" scale="" visible=""></a-entity>
       <a-entity mixin="cubebigshortwallA" position="0 3.5 5" rotation="0 90 0" material="src: #wall; repeat: 8 5" scale="" visible=""></a-entity>
-      <a-entity mixin="cubebigshortwallB" position="0 2.4 5" rotation="0 90 0" material="src: #wall; repeat: 8 5; opacity: .5" scale="" visible=""></a-entity>
+      <a-entity id="balloonwall" mixin="cubebigshortwallB" position="0 2.4 5" rotation="0 90 0" material="src: #wall; repeat: 8 5; opacity: .5" scale="" visible=""></a-entity>
       <a-entity mixin="cubebigwall" position="7 2 -2.45" rotation="0 0 0" material="src: #wall; repeat: 8 5" scale="" visible=""></a-entity>
+      <a-entity mixin="cubebigwall" position="-7.615 2 -2.45" rotation="0 0 0" material="src: #wall; repeat: 8 5" scale="" visible=""></a-entity>
       <a-sky src="#sky"></a-sky>
+      <a-camera><a-cursor></a-cursor></a-camera>
     </a-scene>
   </body>
 </html>
