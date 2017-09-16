@@ -48,6 +48,19 @@ A demo of A Frame, a framework for WebVR. Not much has been done with this proje
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/vr/aframe-test) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/vr/aframe-test/index.html)
 
+### D3 Timeline Demo
+
+A demo of D3 using a pre-existing timeline project. I switched the focus from philosophers to classic rock acts, because I've been listening to a lot of that music lately.
+
+While I'm using code that was already written, I'd like to make some improvements. Some I am considering implementing:
+
+* Logos in mouseover popup
+* Multiple active years (in case of a hiatus and comeback)
+* Custom colors per bar (to correspond with band themes)
+* A different visual indicator for acts that are still active
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timeline) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timeline/index.html)
+
 ## AngularJS
 
 ### CodeSchool
