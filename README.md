@@ -59,15 +59,15 @@ While I'm using code that was already written, I'd like to make some improvement
 * Custom colors per bar (to correspond with band themes)
 * A different visual indicator for acts that are still active
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timeline) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timeline/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timeline) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timeline/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
 ### D3 Timeline Demo - Albums Version
 
-A demo similar to the one above using one-off dates instead of ranges of dates. The data is all sourced from my personal music album collection (totaling 56 CDs at the time of this writing). 
+A demo similar to the one above using one-off dates instead of ranges of dates. The data is all sourced from my personal music album collection (totaling 56 CDs at the time of this writing).
 
 It'd be cool to do a matrix using D3 in the future, with the date the music was released on one axis and the relative "heaviness" of the music on another axis.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timelineAlbums) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timelineAlbums/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timelineAlbums) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timelineAlbums/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
 ## AngularJS
 
