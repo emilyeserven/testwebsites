@@ -9,32 +9,67 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">Testing that this works! Is the cafe open?<br />
-          <span id="test">Who knows!</span>
+        <div class="col-md-12">
+			<p>Testing that this works!</p>
+         	<p>
+         		Is the cafe open?<br />
+          		<span id="cafeOpen">Who knows?</span>
+			</p>
+       		<p>
+       			What about the gallery?<br />
+       			<span id="galleryOpen">Who knows?</span>
+       		</p>
         </div>
       </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
-var cafeOpen = "";
-var cafeNode = $('#test');
-$.ajax('https://api.collection.cooperhewitt.org/rest/', {
-  success: function(response) {
-    console.log(response);
-    cafeOpen = response;
-  },
-  data: {"method": "cooperhewitt.cafe.isOpen",
-        "access_token": "19672e0379f40f57ccd8b590392749a7"}
-  });
+var token = "19672e0379f40f57ccd8b590392749a7",
+	apiUrl = "https://api.collection.cooperhewitt.org/rest/",
+	cafeOpen = "",
+	cafeHours = "",
+	galleryOpen = "",
+	cafeNode = $('#cafeOpen'),
+	galleryNode = $('#galleryOpen');
+
+$.ajax(apiUrl, {
+	success: function(response) {
+		console.log(response);
+		cafeOpen = response;
+	},
+	data: {"method": "cooperhewitt.cafe.isOpen",
+		   "access_token": token}
+});
+	
+$.ajax(apiUrl, {
+	success: function(response) {
+		cafeHours = response;
+	},
+	data: {"method": "cooperhewitt.galleries.isOpen",
+		   "access_token": token}
+});
+	
+
 // set the variable for cafe opening
 // if statement asking for true false
 // if true then the cafe is open
 // if false then the cafe is closed
-if (cafeOpen == true) {
+if (cafeOpen === 1) {
   cafeNode.html("Yes!");
-} else {
+} else if (cafeOpen === "") {
+  cafeNode.html("I don't know.");
+} else if (cafeOpen === 0) {
   cafeNode.html("No!");
 }
+
+if (galleryOpen === 1) {
+  galleryNode.html("Yes!");
+} else if (cafeOpen === "") {
+  galleryNode.html("I don't know.");
+} else if (cafeOpen === 0) {
+  galleryNode.html("No!");
+}
+
 </script>
   </body>
 </html>
