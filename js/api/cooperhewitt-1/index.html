@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+   <meta charset="UTF-8">
+    <title>
+      Testing!!
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">Testing that this works! Is the cafe open?<br />
+          <span id="test">Who knows!</span>
+        </div>
+      </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+var cafeOpen = "";
+var cafeNode = $('#test');
+$.ajax('https://api.collection.cooperhewitt.org/rest/', {
+  success: function(response) {
+    console.log(response);
+    cafeOpen = response;
+  },
+  data: {"method": "cooperhewitt.cafe.isOpen",
+        "access_token": "19672e0379f40f57ccd8b590392749a7"}
+  }
+});
+// set the variable for cafe opening
+// if statement asking for true false
+// if true then the cafe is open
+// if false then the cafe is closed
+if (cafeOpen == true) {
+  cafeNode.html("Yes!");
+} else {
+  cafeNode.html("No!");
+}
+</script>
+  </body>
+</html>
