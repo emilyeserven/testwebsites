@@ -31,7 +31,7 @@
     </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
-	console.log("Test sig: 9");
+	console.log("Test sig: 10");
 var token = "19672e0379f40f57ccd8b590392749a7",
 	apiUrl = "https://api.collection.cooperhewitt.org/rest/",
 	cafeOpen = "",
@@ -90,7 +90,7 @@ $.ajax(apiUrl, {
 	success: function(response) {
 		console.log("Exhibition List:");
 		console.log(response);
-		numberExhibitsNode = response.exhibitions.length;
+		numberExhibitsNode.html(response.exhibitions.length);
 		console.log("Exhibit number: " + response.exhibitions.length);
 		for (i = 0; i < response.exhibitions.length; i++) {
 			console.log(response.exhibitions[i].title);
