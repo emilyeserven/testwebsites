@@ -69,6 +69,14 @@ It'd be cool to do a matrix using D3 in the future, with the date the music was 
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timelineAlbums) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timelineAlbums/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
+### API Test - Cooper Hewitt
+
+A quick test to see if I could connect to an API I've never used before and interact with a page. while there aren't any specific interactive pieces to it yet, I consider the time it took to create to be a small personal victory.
+
+Refactoring of this is definitely needed. Since the project was created on a limited-access school computer, I only worked with one HTML file and a ton of commits.
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/cooperhewitt-1) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/cooperhewitt-1/index.html)
+
 ## AngularJS
 
 ### CodeSchool
