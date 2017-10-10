@@ -19,19 +19,29 @@
        			What about the gallery?<br />
        			<span id="galleryOpen">Who knows?</span>
        		</p>
+       		<p>
+       			Currently, there's a few exhibits. (More accurately, there's <span id="numberExhibits">??</span>!!)<br />
+       			Here's the full list:
+       			<ul id="exhibitList">
+       			</ul>
+       		</p>
         </div>
       </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
-	console.log("Test sig: 4");
+	console.log("Test sig: 5");
 var token = "19672e0379f40f57ccd8b590392749a7",
 	apiUrl = "https://api.collection.cooperhewitt.org/rest/",
 	cafeOpen = "",
 	cafeHours = "",
 	galleryOpen = "",
+	numberExhibits = "",
+	exhibitList = "",
 	cafeNode = $('#cafeOpen'),
-	galleryNode = $('#galleryOpen');
+	galleryNode = $('#galleryOpen'),
+	numberExhibitsNode = $('#numberExhibits'),
+	exhibitListNode = $('#exhibitList');
 
 $.ajax(apiUrl, {
 	success: function(response) {
@@ -73,6 +83,21 @@ $.ajax(apiUrl, {
 	},
 	data: {"method": "cooperhewitt.galleries.isOpen",
 		   "access_token": token}
+});
+
+$.ajax(apiUrl, {
+	success: function(response) {
+		console.log("Exhibition List:");
+		console.log(response);
+		var numberExhibits = response.length;
+		console.log("Exhibit number: " + response.length);
+		for (i = 0; i < response.exhibitions.length; i++) {
+			console.log(response.exhibitions[i].title);
+			exhibitListNode += "<li>" + response.exhibitions[i].title + "</li>";
+		}
+	},
+	data: {"method": "cooperhewitt.exhibitions.getList",
+		  "access_token": token}
 });
 	
 
