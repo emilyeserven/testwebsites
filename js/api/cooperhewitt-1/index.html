@@ -89,11 +89,11 @@ $.ajax(apiUrl, {
 	success: function(response) {
 		console.log("Exhibition List:");
 		console.log(response);
-		var numberExhibits = response.length;
+		var numberExhibits = response.exhibitions.length;
 		console.log("Exhibit number: " + response.length);
 		for (i = 0; i < response.exhibitions.length; i++) {
 			console.log(response.exhibitions[i].title);
-			exhibitListNode += "<li>" + response.exhibitions[i].title + "</li>";
+			exhibitListNode.append("<li>" + response.exhibitions[i].title + "</li>");
 		}
 	},
 	data: {"method": "cooperhewitt.exhibitions.getList",
