@@ -57,29 +57,31 @@ $.ajax(apiUrl, {
 // if statement asking for true false
 // if true then the cafe is open
 // if false then the cafe is closed
-console.log("Cafe status?");
-if (cafeOpen === 1) {
-	console.log("Cafe is open.");
-  cafeNode.html("Yes!");
-} else if (cafeOpen === "") {
-	console.log("Cafe status is unknown.");
-  cafeNode.html("I don't know.");
-} else if (cafeOpen === 0) {
-	console.log("Cafe is closed.");
-  cafeNode.html("No!");
-}
-	
-console.log("Gallery status?");
-if (galleryOpen === 1) {
-	console.log("Gallery is open.");
-  galleryNode.html("Yes!");
-} else if (cafeOpen === "") {
-	console.log("Gallery status is unknown.");
-  galleryNode.html("I don't know.");
-} else if (cafeOpen === 0) {
-	console.log("Gallery is closed.");
-  galleryNode.html("No!");
-}
+$(document).ready(function() {
+	console.log("Cafe status?");
+	if (cafeOpen === 1) {
+		console.log("Cafe is open.");
+	  cafeNode.html("Yes!");
+	} else if (cafeOpen === "") {
+		console.log("Cafe status is unknown.");
+	  cafeNode.html("I don't know.");
+	} else if (cafeOpen === 0) {
+		console.log("Cafe is closed.");
+	  cafeNode.html("No!");
+	}
+
+	console.log("Gallery status?");
+	if (galleryOpen === 1) {
+		console.log("Gallery is open.");
+	  galleryNode.html("Yes!");
+	} else if (cafeOpen === "") {
+		console.log("Gallery status is unknown.");
+	  galleryNode.html("I don't know.");
+	} else if (cafeOpen === 0) {
+		console.log("Gallery is closed.");
+	  galleryNode.html("No!");
+	}
+});
 
 </script>
   </body>
