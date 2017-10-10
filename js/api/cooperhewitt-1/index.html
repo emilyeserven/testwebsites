@@ -24,6 +24,7 @@
     </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
+	console.log("Test sig: 2");
 var token = "19672e0379f40f57ccd8b590392749a7",
 	apiUrl = "https://api.collection.cooperhewitt.org/rest/",
 	cafeOpen = "",
@@ -37,6 +38,17 @@ $.ajax(apiUrl, {
 		console.log("Cafe Call:");
 		console.log(response);
 		cafeOpen = response;
+		console.log("Cafe status?");
+		if (cafeOpen === 1) {
+			console.log("Cafe is open.");
+		  cafeNode.html("Yes!");
+		} else if (cafeOpen === "") {
+			console.log("Cafe status is unknown.");
+		  cafeNode.html("I don't know.");
+		} else if (cafeOpen === 0) {
+			console.log("Cafe is closed.");
+		  cafeNode.html("No!");
+		}
 	},
 	data: {"method": "cooperhewitt.cafe.isOpen",
 		   "access_token": token}
@@ -47,6 +59,17 @@ $.ajax(apiUrl, {
 		console.log("Gallery Call:");
 		console.log(response);
 		galleryOpen = response;
+		console.log("Gallery status?");
+		if (galleryOpen === 1) {
+			console.log("Gallery is open.");
+		  galleryNode.html("Yes!");
+		} else if (cafeOpen === "") {
+			console.log("Gallery status is unknown.");
+		  galleryNode.html("I don't know.");
+		} else if (cafeOpen === 0) {
+			console.log("Gallery is closed.");
+		  galleryNode.html("No!");
+		}
 	},
 	data: {"method": "cooperhewitt.galleries.isOpen",
 		   "access_token": token}
@@ -57,31 +80,7 @@ $.ajax(apiUrl, {
 // if statement asking for true false
 // if true then the cafe is open
 // if false then the cafe is closed
-$(document).ready(function() {
-	console.log("Cafe status?");
-	if (cafeOpen === 1) {
-		console.log("Cafe is open.");
-	  cafeNode.html("Yes!");
-	} else if (cafeOpen === "") {
-		console.log("Cafe status is unknown.");
-	  cafeNode.html("I don't know.");
-	} else if (cafeOpen === 0) {
-		console.log("Cafe is closed.");
-	  cafeNode.html("No!");
-	}
 
-	console.log("Gallery status?");
-	if (galleryOpen === 1) {
-		console.log("Gallery is open.");
-	  galleryNode.html("Yes!");
-	} else if (cafeOpen === "") {
-		console.log("Gallery status is unknown.");
-	  galleryNode.html("I don't know.");
-	} else if (cafeOpen === 0) {
-		console.log("Gallery is closed.");
-	  galleryNode.html("No!");
-	}
-});
 
 </script>
   </body>
