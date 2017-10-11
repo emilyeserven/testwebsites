@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
   <head>
    <meta charset="UTF-8">
@@ -17,110 +16,75 @@
      	</div>
      </div>
       <div class="row">
-        <div class="col-md-6">
-			<p>Testing that this works!</p>
-         	<p>
-         		Is the cafe open?<br />
-          		<span id="cafeOpen">Who knows?</span>
-			</p>
+      	<div class="col-md-12">
+          <h2>Exhibit List</h2>
        		<p>
-       			What about the gallery?<br />
-       			<span id="galleryOpen">Who knows?</span>
-       		</p>
-       		<p>Developed with the <a href="https://collection.cooperhewitt.org/api/">Cooper Hewitt API</a><br />
-       		Crafted with 💖 by <a href="emilyserven.net">Emily</a></p>
-       		<p>Cr</p>
-       		<p>The API key expire on "Oct 11, 2017 at 01:38:19 PM", so if you don't see anything here, it's past that time.</p>
-		  </div>
-      	<div class="col-md-6">
-       		<p>
-       			Currently, there's a few exhibits. (More accurately, there's <span id="numberExhibits">??</span>!!)<br />
-       			Here's the full list:
-       			<ul id="exhibitList">
-       			</ul>
-       		</p>
+       			Here's a quick sampling of exhibits currently at Cooper Hewitt:
+          </p>
+     			<div id="exhibitList" class="row"></div>
         </div>
       </div>
+      <div class="form-group">
+          &nbsp;
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="chart">
+
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+          &nbsp;
+      </div>
+       <div class="row">
+         <div class="col-md-6">
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">Can I Go?</h3>
+             </div>
+             <div class="panel-body">
+              	<p>
+              		Is the cafe open?<br />
+               	<span id="cafeOpen">Who knows?</span>
+     			    </p>
+            		<p>
+            			What about the gallery?<br />
+            			<span id="galleryOpen">Who knows?</span>
+            		</p>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-6">
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">Credits</h3>
+             </div>
+             <div class="panel-body">
+               <p>Developed with the <a href="https://collection.cooperhewitt.org/api/">Cooper Hewitt API</a><br />
+            		Crafted with ❤︎ by <a href="emilyserven.net">Emily</a></p>
+            		<p>The API key expire on "Oct 11, 2017 at 01:38:19 PM", so if you don't see anything here, it's past that time.</p>
+                <p>
+                  Current laundry list of updates to be made:
+                  <ul>
+                    <li>
+                      Simple D3 integration
+                    </li>
+                    <li>
+                      Streamlining of API requests
+                    </li>
+                    <li>
+                      Use only asynchronous JS instead of synchronous workaround
+                    </li>
+                  </ul>
+                </p>
+             </div>
+           </div>
+   		  </div>
+       </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>
-	console.log("Test sig: 10");
-var token = "19672e0379f40f57ccd8b590392749a7",
-	apiUrl = "https://api.collection.cooperhewitt.org/rest/",
-	cafeOpen = "",
-	cafeHours = "",
-	galleryOpen = "",
-	numberExhibits = "",
-	exhibitList = "",
-	cafeNode = $('#cafeOpen'),
-	galleryNode = $('#galleryOpen'),
-	numberExhibitsNode = $('#numberExhibits'),
-	exhibitListNode = $('#exhibitList');
-
-$.ajax(apiUrl, {
-	success: function(response) {
-		console.log("Cafe Call:");
-		console.log(response);
-		cafeOpen = response.open;
-		console.log("Cafe status?");
-		if (cafeOpen === 1) {
-			console.log("Cafe is open.");
-		  cafeNode.html("Yes!");
-		} else if (cafeOpen === "") {
-			console.log("Cafe status is unknown.");
-		  cafeNode.html("I don't know.");
-		} else if (cafeOpen === 0) {
-			console.log("Cafe is closed.");
-		  cafeNode.html("No!");
-		}
-	},
-	data: {"method": "cooperhewitt.cafe.isOpen",
-		   "access_token": token}
-});
-	
-$.ajax(apiUrl, {
-	success: function(response) {
-		console.log("Gallery Call:");
-		console.log(response);
-		galleryOpen = response.open;
-		console.log("Gallery status?");
-		if (galleryOpen === 1) {
-			console.log("Gallery is open.");
-		  galleryNode.html("Yes!");
-		} else if (cafeOpen === "") {
-			console.log("Gallery status is unknown.");
-		  galleryNode.html("I don't know.");
-		} else if (cafeOpen === 0) {
-			console.log("Gallery is closed.");
-		  galleryNode.html("No!");
-		}
-	},
-	data: {"method": "cooperhewitt.galleries.isOpen",
-		   "access_token": token}
-});
-
-$.ajax(apiUrl, {
-	success: function(response) {
-		console.log("Exhibition List:");
-		console.log(response);
-		numberExhibitsNode.html(response.exhibitions.length);
-		console.log("Exhibit number: " + response.exhibitions.length);
-		for (i = 0; i < response.exhibitions.length; i++) {
-			console.log(response.exhibitions[i].title);
-			exhibitListNode.append("<li>" + response.exhibitions[i].title + "</li>");
-		}
-	},
-	data: {"method": "cooperhewitt.exhibitions.getList",
-		  "access_token": token}
-});
-	
-
-// set the variable for cafe opening
-// if statement asking for true false
-// if true then the cafe is open
-// if false then the cafe is closed
-
-
-</script>
-  </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
 </html>
