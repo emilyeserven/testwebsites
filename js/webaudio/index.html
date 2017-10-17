@@ -9,12 +9,19 @@
 <body>
 	<h2>Testing Nexus!</h2>
     <div id="redDial"></div>
+    <div id="oraDial"></div>
 
     <script>
 		var redDial = new Nexus.Dial('#redDial');
 		redDial.value = 0.5;
 		redDial.colorize("accent","#E80000");
-		redDial.colorize("fill","#900000");
+		redDial.colorize("fill","#410000");
+		
+		var oraDial = new Nexus.Dial('#oraDial');
+		oraDial.value = 0.5;
+		oraDial.colorize("accent","#FF7600");
+		oraDial.colorize("fill","#823C00");
+		
 		document.body.style.backgroundColor = "#000";
     </script>
 </body>
