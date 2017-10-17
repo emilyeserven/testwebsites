@@ -10,6 +10,10 @@
 	<h2>Testing Nexus!</h2>
     <div id="redDial"></div>
     <div id="oraDial"></div>
+    <div id="yelDial"></div>
+    <div id="greDial"></div>
+    <div id="bluDial"></div>
+    <div id="purDial"></div>
 
     <script>
 		var redDial = new Nexus.Dial('#redDial');
@@ -21,6 +25,26 @@
 		oraDial.value = 0.5;
 		oraDial.colorize("accent","#FF7600");
 		oraDial.colorize("fill","#823C00");
+		
+		var yelDial = new Nexus.Dial('#yelDial');
+		yelDial.value = 0.5;
+		yelDial.colorize("accent","#FFD22C");
+		yelDial.colorize("fill","#775D00");
+		
+		var greDial = new Nexus.Dial('#greDial');
+		greDial.value = 0.5;
+		greDial.colorize("accent","#2FE825");
+		greDial.colorize("fill","#067500");
+		
+		var bluDial = new Nexus.Dial('#bluDial');
+		bluDial.value = 0.5;
+		bluDial.colorize("accent","#1D21CA");
+		bluDial.colorize("fill","#030545");
+		
+		var purDial = new Nexus.Dial('#purDial');
+		purDial.value = 0.5;
+		purDial.colorize("accent","#6502B1");
+		purDial.colorize("fill","#2D004F");
 		
 		document.body.style.backgroundColor = "#000";
     </script>
