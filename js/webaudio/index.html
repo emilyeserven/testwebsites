@@ -8,10 +8,14 @@
 
 <body>
 	<h2>Testing Nexus!</h2>
-    <div id="dial"></div>
+    <div id="redDial"></div>
 
     <script>
-      var dial = new Nexus.Dial('#dial')
+		var redDial = new Nexus.Dial('#redDial');
+		redDial.value = 0.5;
+		redDial.colorize("accent","#E80000");
+		redDial.colorize("fill","#900000");
+		document.body.style.backgroundColor = "#000";
     </script>
 </body>
 </html>
