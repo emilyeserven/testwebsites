@@ -77,6 +77,12 @@ Refactoring of this is definitely needed. Since the project was created on a lim
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/cooperhewitt-1) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/cooperhewitt-1/index.html)
 
+### Web Audio - ToneJS and NexusUI Test
+
+Part of an assignment calling to connect ToneJS and NexusUI and create a web application. This is just the first step, I'm planning on figuring out the other interface elements and instruments soon.
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/webaudio/index.html)
+
 ## AngularJS
 
 ### CodeSchool
