@@ -178,4 +178,34 @@ purButton.on('release',function(v) {
   synth.triggerRelease();
 });
 
+/* PINK */
+
+var pinDial = new Nexus.Dial('#pinDial', {
+    'min': 0,
+    'max': 6,
+    'value': 3
+});
+pinDial.colorize("accent","#E0006A");
+pinDial.colorize("fill","#510026");
+var pinValue = 3;
+pinDisplay = document.getElementById("pinDisplay");
+pinDisplay.innerHTML = "G" + purValue;
+pinDial.on('change', function(v) {
+    console.log("Pink Dial value: " + v + " | Rounded: " + Math.round(v));
+    pinValue = Math.round(v);
+    pinDisplay.innerHTML = "G" + pinValue;
+    return pinValue;
+});
+
+var pinButton = new Nexus.Button('#pinButton');
+pinButton.colorize("accent","#510026");
+pinButton.colorize("fill","#E0006A");
+pinButton.on('click',function(v) {
+  console.log("Pink Button: G" + pinValue);
+  synth.triggerAttack('G' + pinValue);
+});
+pinButton.on('release',function(v) {
+  synth.triggerRelease();
+});
+
 document.body.style.backgroundColor = "#EEE";
