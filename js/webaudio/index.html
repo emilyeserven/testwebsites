@@ -11,8 +11,12 @@
 	<script src="NexusUI.js"></script>
 	<script src="Tone.min.js"></script>
 
-	<h2>Testing Nexus!</h2>
 	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4">
+				<h2>Testing Nexus!</h2>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-offset-4 col-md-2">
 				<div id="redButton"></div>
@@ -21,52 +25,206 @@
 				<div id="redDial"></div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-md-2">
+				<div id="oraButton"></div>
+			</div>
+			<div class="col-md-2">
+				<div id="oraDial"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-md-2">
+				<div id="yelButton"></div>
+			</div>
+			<div class="col-md-2">
+				<div id="yelDial"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-md-2">
+				<div id="greButton"></div>
+			</div>
+			<div class="col-md-2">
+				<div id="greDial"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-md-2">
+				<div id="bluButton"></div>
+			</div>
+			<div class="col-md-2">
+				<div id="bluDial"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-md-2">
+				<div id="purButton"></div>
+			</div>
+			<div class="col-md-2">
+				<div id="purDial"></div>
+			</div>
+		</div>
 	</div>
-    <div id="oraDial"></div>
-    <div id="yelDial"></div>
-    <div id="greDial"></div>
-    <div id="bluDial"></div>
-    <div id="purDial"></div>
 
     <script>
+		var synth = new Tone.AMSynth().toMaster();
 
-		var redButton = new Nexus.Button('#redButton');
-		redButton.colorize("fill","#E80000");
-		redButton.colorize("accent","#410000");
-
-		var redDial = new Nexus.Dial('#redDial');
-		redDial.value = 0.16;
+		var redDial = new Nexus.Dial('#redDial', {
+			'min': 0,
+			'max': 6,
+			'value': 3
+		});
 		redDial.colorize("accent","#E80000");
 		redDial.colorize("fill","#410000");
+		var redValue = 3;
+		redDial.on('change', function(v) {
+			console.log("Red Dial value: " + v + " | Rounded: " + Math.round(v));
+			return redValue = Math.round(v);
+		});
 
-		var oraDial = new Nexus.Dial('#oraDial');
-		oraDial.value = 0.33;
+		var redButton = new Nexus.Button('#redButton');
+		redButton.colorize("accent","#410000");
+		redButton.colorize("fill","#E80000");
+		redButton.on('click',function(v) {
+		  console.log("Red Button: A" + redValue);
+		  synth.triggerAttack('A' + redValue);
+	  	});
+		redButton.on('release',function(v) {
+		  synth.triggerRelease();
+	  	});
+
+		/** ORANGE **/
+
+		var oraDial = new Nexus.Dial('#oraDial', {
+            'min': 0,
+			'max': 6,
+			'value': 3
+        });
 		oraDial.colorize("accent","#FF7600");
 		oraDial.colorize("fill","#823C00");
+		var oraValue = 3;
+		oraDial.on('change', function(v) {
+			console.log("Orange Dial value: " + v + " | Rounded: " + Math.round(v));
+			return oraValue = Math.round(v);
+		});
 
-		var yelDial = new Nexus.Dial('#yelDial');
-		yelDial.value = 0.50;
+		var oraButton = new Nexus.Button('#oraButton');
+		oraButton.colorize("accent","#823C00");
+		oraButton.colorize("fill","#FF7600");
+		oraButton.on('click',function(v) {
+		  console.log("Orange Button: B" + oraValue);
+		  synth.triggerAttack('B' + oraValue);
+	  	});
+		oraButton.on('release',function(v) {
+		  synth.triggerRelease();
+	  	});
+
+		/* YELLOW */
+
+		var yelDial = new Nexus.Dial('#yelDial', {
+			'min': 0,
+			'max': 6,
+			'value': 3
+		});
 		yelDial.colorize("accent","#FFD22C");
 		yelDial.colorize("fill","#775D00");
+		var yelValue = 3;
+		yelDial.on('change', function(v) {
+			console.log("Yellow Dial value: " + v + " | Rounded: " + Math.round(v));
+			return yelValue = Math.round(v);
+		});
 
-		var greDial = new Nexus.Dial('#greDial');
-		greDial.value = 0.66;
+		var yelButton = new Nexus.Button('#yelButton');
+		yelButton.colorize("accent","#775D00");
+		yelButton.colorize("fill","#FFD22C");
+		yelButton.on('click',function(v) {
+		  console.log("Yellow Button: C" + yelValue);
+		  synth.triggerAttack('C' + yelValue);
+	  	});
+		yelButton.on('release',function(v) {
+		  synth.triggerRelease();
+	  	});
+
+		/* GREEN */
+
+		var greDial = new Nexus.Dial('#greDial', {
+			'min': 0,
+			'max': 6,
+			'value': 3
+		});
 		greDial.colorize("accent","#2FE825");
 		greDial.colorize("fill","#067500");
+		var greValue = 3;
+		greDial.on('change', function(v) {
+			console.log("Green Dial value: " + v + " | Rounded: " + Math.round(v));
+			return greValue = Math.round(v);
+		});
 
-		var bluDial = new Nexus.Dial('#bluDial');
-		bluDial.value = 0.83;
+		var greButton = new Nexus.Button('#greButton');
+		greButton.colorize("accent","#067500");
+		greButton.colorize("fill","#2FE825");
+		greButton.on('click',function(v) {
+		  console.log("Green Button: D" + greValue);
+		  synth.triggerAttack('D' + greValue);
+	  	});
+		greButton.on('release',function(v) {
+		  synth.triggerRelease();
+	  	});
+
+		/* BLUE */
+
+		var bluDial = new Nexus.Dial('#bluDial', {
+			'min': 0,
+			'max': 6,
+			'value': 3
+		});
 		bluDial.colorize("accent","#1D21CA");
 		bluDial.colorize("fill","#030545");
+		var bluValue = 3;
+		bluDial.on('change', function(v) {
+			console.log("Blue Dial value: " + v + " | Rounded: " + Math.round(v));
+			return bluValue = Math.round(v);
+		});
 
-		var purDial = new Nexus.Dial('#purDial');
-		purDial.value = 1.0;
+		var bluButton = new Nexus.Button('#bluButton');
+		bluButton.colorize("accent","#030545");
+		bluButton.colorize("fill","#1D21CA");
+		bluButton.on('click',function(v) {
+		  console.log("Blue Button: E" + bluValue);
+		  synth.triggerAttack('E' + bluValue);
+	  	});
+		bluButton.on('release',function(v) {
+		  synth.triggerRelease();
+	  	});
+
+		/* PURPLE */
+
+		var purDial = new Nexus.Dial('#purDial', {
+			'min': 0,
+			'max': 6,
+			'value': 3
+		});
 		purDial.colorize("accent","#6502B1");
 		purDial.colorize("fill","#2D004F");
+		var purValue = 3;
+		purDial.on('change', function(v) {
+			console.log("Purple Dial value: " + v + " | Rounded: " + Math.round(v));
+			return purValue = Math.round(v);
+		});
 
-		document.body.style.backgroundColor = "#000";
+		var purButton = new Nexus.Button('#purButton');
+		purButton.colorize("accent","#2D004F");
+		purButton.colorize("fill","#6502B1");
+		purButton.on('click',function(v) {
+		  console.log("Purple Button: F" + purValue);
+		  synth.triggerAttack('F' + purValue);
+	  	});
+		purButton.on('release',function(v) {
+		  synth.triggerRelease();
+	  	});
 
-        var synth = new Tone.AMSynth().toMaster()
+		document.body.style.backgroundColor = "#EEE";
 
         //attach a listener to all of the buttons
         /*document.querySelectorAll('#redDial').forEach(function(button){
@@ -79,14 +237,7 @@
         		synth.triggerRelease()
         	});
         });*/
-		redButton.on('click',function(v) {
-		  console.log(v);
-		  synth.triggerAttack('C4');
-	  	});
-		redButton.on('release',function(v) {
-		  console.log(v);
-		  synth.triggerRelease();
-	  	});
+
     </script>
 </body>
 </html>
