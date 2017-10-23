@@ -13,55 +13,73 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-offset-4 col-md-4">
+			<div class="col-md-offset-3 col-md-4 text-center">
 				<h2>Testing Nexus!</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-2">
+			<div class="col-md-offset-4 col-md-1">
 				<div id="redButton"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1 text-center">
+				<br /><span id="redDisplay">??</span>
+			</div>
+			<div class="col-md-1">
 				<div id="redDial"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-2">
+			<div class="col-md-offset-4 col-md-1">
 				<div id="oraButton"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1 text-center">
+				<br /><span id="oraDisplay">??</span>
+			</div>
+			<div class="col-md-1">
 				<div id="oraDial"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-2">
+			<div class="col-md-offset-4 col-md-1">
 				<div id="yelButton"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1 text-center">
+				<br /><span id="yelDisplay">??</span>
+			</div>
+			<div class="col-md-1">
 				<div id="yelDial"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-2">
+			<div class="col-md-offset-4 col-md-1">
 				<div id="greButton"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1 text-center">
+				<br /><span id="greDisplay">??</span>
+			</div>
+			<div class="col-md-1">
 				<div id="greDial"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-2">
+			<div class="col-md-offset-4 col-md-1">
 				<div id="bluButton"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1 text-center">
+				<br /><span id="bluDisplay">??</span>
+			</div>
+			<div class="col-md-1">
 				<div id="bluDial"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-2">
+			<div class="col-md-offset-4 col-md-1">
 				<div id="purButton"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1 text-center">
+				<br /><span id="purDisplay">??</span>
+			</div>
+			<div class="col-md-1">
 				<div id="purDial"></div>
 			</div>
 		</div>
@@ -78,9 +96,13 @@
 		redDial.colorize("accent","#E80000");
 		redDial.colorize("fill","#410000");
 		var redValue = 3;
+		redDisplay = document.getElementById("redDisplay");
+		redDisplay.innerHTML = "A" + redValue;
 		redDial.on('change', function(v) {
 			console.log("Red Dial value: " + v + " | Rounded: " + Math.round(v));
-			return redValue = Math.round(v);
+			redValue = Math.round(v);
+			redDisplay.innerHTML = "A" + redValue;
+			return redValue;
 		});
 
 		var redButton = new Nexus.Button('#redButton');
@@ -104,9 +126,13 @@
 		oraDial.colorize("accent","#FF7600");
 		oraDial.colorize("fill","#823C00");
 		var oraValue = 3;
+		oraDisplay = document.getElementById("oraDisplay");
+		oraDisplay.innerHTML = "B" + oraValue;
 		oraDial.on('change', function(v) {
 			console.log("Orange Dial value: " + v + " | Rounded: " + Math.round(v));
-			return oraValue = Math.round(v);
+			oraValue = Math.round(v);
+			oraDisplay.innerHTML = "B" + oraValue;
+			return oraValue;
 		});
 
 		var oraButton = new Nexus.Button('#oraButton');
@@ -130,9 +156,13 @@
 		yelDial.colorize("accent","#FFD22C");
 		yelDial.colorize("fill","#775D00");
 		var yelValue = 3;
+		yelDisplay = document.getElementById("yelDisplay");
+		yelDisplay.innerHTML = "C" + yelValue;
 		yelDial.on('change', function(v) {
 			console.log("Yellow Dial value: " + v + " | Rounded: " + Math.round(v));
-			return yelValue = Math.round(v);
+			yelValue = Math.round(v);
+			yelDisplay.innerHTML = "C" + yelValue;
+			return yelValue;
 		});
 
 		var yelButton = new Nexus.Button('#yelButton');
@@ -156,9 +186,13 @@
 		greDial.colorize("accent","#2FE825");
 		greDial.colorize("fill","#067500");
 		var greValue = 3;
+		greDisplay = document.getElementById("greDisplay");
+		greDisplay.innerHTML = "D" + greValue;
 		greDial.on('change', function(v) {
 			console.log("Green Dial value: " + v + " | Rounded: " + Math.round(v));
-			return greValue = Math.round(v);
+			greValue = Math.round(v);
+			greDisplay.innerHTML = "D" + greValue;
+			return greValue;
 		});
 
 		var greButton = new Nexus.Button('#greButton');
@@ -182,9 +216,13 @@
 		bluDial.colorize("accent","#1D21CA");
 		bluDial.colorize("fill","#030545");
 		var bluValue = 3;
+		bluDisplay = document.getElementById("bluDisplay");
+		bluDisplay.innerHTML = "E" + bluValue;
 		bluDial.on('change', function(v) {
 			console.log("Blue Dial value: " + v + " | Rounded: " + Math.round(v));
-			return bluValue = Math.round(v);
+			bluValue = Math.round(v);
+			bluDisplay.innerHTML = "E" + bluValue;
+			return bluValue;
 		});
 
 		var bluButton = new Nexus.Button('#bluButton');
@@ -208,9 +246,13 @@
 		purDial.colorize("accent","#6502B1");
 		purDial.colorize("fill","#2D004F");
 		var purValue = 3;
+		purDisplay = document.getElementById("purDisplay");
+		purDisplay.innerHTML = "F" + purValue;
 		purDial.on('change', function(v) {
 			console.log("Purple Dial value: " + v + " | Rounded: " + Math.round(v));
-			return purValue = Math.round(v);
+			purValue = Math.round(v);
+			purDisplay.innerHTML = "F" + purValue;
+			return purValue;
 		});
 
 		var purButton = new Nexus.Button('#purButton');
