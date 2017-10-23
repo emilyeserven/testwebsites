@@ -3,12 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
-<script src="NexusUI.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
+
+	<script src="NexusUI.js"></script>
+	<script src="Tone.min.js"></script>
+
 	<h2>Testing Nexus!</h2>
-    <div id="redDial"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-4 col-md-2">
+				<div id="redButton"></div>
+			</div>
+			<div class="col-md-2">
+				<div id="redDial"></div>
+			</div>
+		</div>
+	</div>
     <div id="oraDial"></div>
     <div id="yelDial"></div>
     <div id="greDial"></div>
@@ -16,37 +29,64 @@
     <div id="purDial"></div>
 
     <script>
+
+		var redButton = new Nexus.Button('#redButton');
+		redButton.colorize("fill","#E80000");
+		redButton.colorize("accent","#410000");
+
 		var redDial = new Nexus.Dial('#redDial');
 		redDial.value = 0.16;
 		redDial.colorize("accent","#E80000");
 		redDial.colorize("fill","#410000");
-		
+
 		var oraDial = new Nexus.Dial('#oraDial');
 		oraDial.value = 0.33;
 		oraDial.colorize("accent","#FF7600");
 		oraDial.colorize("fill","#823C00");
-		
+
 		var yelDial = new Nexus.Dial('#yelDial');
 		yelDial.value = 0.50;
 		yelDial.colorize("accent","#FFD22C");
 		yelDial.colorize("fill","#775D00");
-		
+
 		var greDial = new Nexus.Dial('#greDial');
 		greDial.value = 0.66;
 		greDial.colorize("accent","#2FE825");
 		greDial.colorize("fill","#067500");
-		
+
 		var bluDial = new Nexus.Dial('#bluDial');
 		bluDial.value = 0.83;
 		bluDial.colorize("accent","#1D21CA");
 		bluDial.colorize("fill","#030545");
-		
+
 		var purDial = new Nexus.Dial('#purDial');
 		purDial.value = 1.0;
 		purDial.colorize("accent","#6502B1");
 		purDial.colorize("fill","#2D004F");
-		
+
 		document.body.style.backgroundColor = "#000";
+
+        var synth = new Tone.AMSynth().toMaster()
+
+        //attach a listener to all of the buttons
+        /*document.querySelectorAll('#redDial').forEach(function(button){
+        	button.addEventListener('mousedown', function(e){
+        		//play the note on mouse down
+        		synth.triggerAttack(e.target.textContent)
+        	});
+        	button.addEventListener('mouseup', function(e){
+        		//release on mouseup
+        		synth.triggerRelease()
+        	});
+        });*/
+		redButton.on('click',function(v) {
+		  console.log(v);
+		  synth.triggerAttack('C4');
+	  	});
+		redButton.on('release',function(v) {
+		  console.log(v);
+		  synth.triggerRelease();
+	  	});
     </script>
 </body>
 </html>
