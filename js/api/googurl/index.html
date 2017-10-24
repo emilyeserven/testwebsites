@@ -1,44 +1,82 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>jQuery.post demo</title>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<script type="text/javascript">
+console.log("Test 4");
+function makeShort()
+{
+   var longUrl=document.getElementById("longurl").value;
+    var request = gapi.client.urlshortener.url.insert({
+      'resource': {
+      'longUrl': longUrl
+    }
+    });
+    request.execute(function(response)
+    {
+
+        if(response.id != null)
+        {
+            str ="<b>Long URL:</b>"+longUrl+"<br>";
+            str +="<b>Short URL:</b> <a href='"+response.id+"'>"+response.id+"</a><br>";
+            document.getElementById("output").innerHTML = str;
+        }
+        else
+        {
+            alert("error: creating short url n"+ response.error);
+        }
+
+    });
+ }
+
+function getShortInfo()
+{
+var shortUrl=document.getElementById("shorturl").value;
+
+    var request = gapi.client.urlshortener.url.get({
+      'shortUrl': shortUrl,
+    'projection':'FULL'
+    });
+    request.execute(function(response)
+    {
+
+        if(response.longUrl!= null)
+        {
+            str ="<b>Long URL:</b>"+response.longUrl+"<br>";
+            str +="<b>Create On:</b>"+response.created+"<br>";
+            str +="<b>Short URL Clicks:</b>"+response.analytics.allTime.shortUrlClicks+"<br>";
+            str +="<b>Long URL Clicks:</b>"+response.analytics.allTime.longUrlClicks+"<br>";
+
+            document.getElementById("output").innerHTML = str;
+        }
+        else
+        {
+            alert("error: "+response.error);
+        }
+
+    });
+
+}
+function load()
+{
+    //Get your own Browser API Key from  https://code.google.com/apis/console/
+    gapi.client.setApiKey('AIzaSyBlkUvTfY7XUST5NHscfmbkvu-wYNiUugI');
+    gapi.client.load('urlshortener', 'v1',function(){document.getElementById("output").innerHTML="";});
+
+}
+window.onload = load;
+
+</script>
+<script src="https://apis.google.com/js/client.js"> </script>
+
 <body>
 
-<form action="/" id="searchForm">
-  <input type="text" name="s" placeholder="URL Here">
-  <input type="submit" value="Search">
-</form>
-<!-- the result of the search will be rendered inside this div -->
-<div id="result"></div>
+URL: <input type="text" id="longurl" name="url" value="http://www.hayageek.com" /> <br/>
+<input type="button" value="Create Short" onclick="makeShort();" /> <br/> <br/>
 
-<script>
-console.log("Test 3");
-// Attach a submit handler to the form
-$( "#searchForm" ).submit(function( event ) {
+URL: <input type="text" id="shorturl" name="url" value="http://goo.gl/NHj1c" /> <br/>
+<input type="button" value="Get Short  URL Info" onclick="getShortInfo();" />
 
-  // Stop form from submitting normally
-  event.preventDefault();
-
-  // Get some values from elements on the page:
-  var $form = $( this ),
-    term = $form.find( "input[name='s']" ).val(),
-    url = $form.attr( "action" );
-    console.log("term: " + term)
-  // Send the data using post
-  var posting = $.post( "https://www.googleapis.com/urlshortener/v1/url?key={AIzaSyBlkUvTfY7XUST5NHscfmbkvu-wYNiUugI}", { "longUrl": term } );
-
-  // Put the results in a div
-  posting.done(function( data ) {
-    console.log("data:");
-    console.log(data);
-    var content = $( data ).find( "#content" );
-    $( "#result" ).empty().append( content );
-  });
-});
-</script>
+<div id="output">Wait. Loading....</div>
 
 </body>
 </html>
