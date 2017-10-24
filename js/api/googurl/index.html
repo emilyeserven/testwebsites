@@ -8,13 +8,14 @@
 <body>
 
 <form action="/" id="searchForm">
-  <input type="text" name="s" placeholder="Search...">
+  <input type="text" name="s" placeholder="URL Here">
   <input type="submit" value="Search">
 </form>
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
 
 <script>
+console.log("Test 2");
 // Attach a submit handler to the form
 $( "#searchForm" ).submit(function( event ) {
 
@@ -27,7 +28,7 @@ $( "#searchForm" ).submit(function( event ) {
     url = $form.attr( "action" );
 
   // Send the data using post
-  var posting = $.post( url, { s: term } );
+  var posting = $.post( "https://www.googleapis.com/urlshortener/v1/url?key={AIzaSyBlkUvTfY7XUST5NHscfmbkvu-wYNiUugI}", { "longUrl": term } );
 
   // Put the results in a div
   posting.done(function( data ) {
