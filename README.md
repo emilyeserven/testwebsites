@@ -83,6 +83,12 @@ Part of an assignment calling to connect ToneJS and NexusUI and create a web app
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/webaudio/index.html)
 
+### Google Cloud Vision Test - API POST Request Test
+
+Tried to make something POST to a server and return a response and eventually (28 browser tabs later) it worked.
+
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/googurl) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/googurl/index.html)
+
 ## AngularJS
 
 ### CodeSchool

@@ -1,28 +1,33 @@
-console.log("Test 4");
+console.log("Test 16");
 function logoDetect()
 {
-   var apiUrl = "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBlkUvTfY7XUST5NHscfmbkvu-wYNiUugI",
-       imageUrl = document.getElementById("imageurl").value;
-   $.post(apiUrl, {
-      data: {
-        "requests": [
-          {
-            "image": {
-              "source": {
-                "imageUri": imageUrl
-              }
-            },
-            "features": [
-              {
-                "type": "LOGO_DETECTION"
-              }
-            ]
-          }
-        ]
+   var key = "AIzaSyCBUQyq3xAP49xlRnNA5iQ-31Omzo50W_A";
+       apiUrl = "https://vision.googleapis.com/v1/images:annotate?key=" + key,
+       imageUrl = document.getElementById("imageurl").value,
+       request = {"requests":[{"image":{"source":{"imageUri":imageUrl}},"features":[{"type":"LOGO_DETECTION"}]}]},
+       outputNode = $('#output'),
+       outputImgNode = $('#outputImg');
+   console.log("Image URL:");
+   console.log(imageUrl);
+   $.ajax({
+      type: "POST",
+      url: apiUrl,
+      dataType: 'json',
+      data: JSON.stringify(request),
+      headers: {
+         "Content-Type": "application/json",
       },
       success: function(response) {
          console.log("Success!");
          console.log(response);
+         outputNode.html(response.responses[0].logoAnnotations[0].description);
+         outputImgNode.html("<img src='" + imageUrl + "' />");
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+         console.log('ERRORS: ');
+         console.log(jqXHR);
+         console.log(textStatus);
+         console.log(errorThrown);
       }
    });
 }
