@@ -1,5 +1,5 @@
 console.log("Test sig: 11");
-var token = "66baffe96a88a7dd06204620b07b01c3",
+var token = "cd843eaae13ed052873a33cd9b622432",
 	apiUrl = "https://api.collection.cooperhewitt.org/rest/",
 	cafeOpen = "",
 	cafeHours = "",
