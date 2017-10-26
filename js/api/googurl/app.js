@@ -1,4 +1,4 @@
-console.log("Test 16");
+console.log("Test 17");
 function logoDetect()
 {
    var key = "AIzaSyCBUQyq3xAP49xlRnNA5iQ-31Omzo50W_A";
@@ -28,6 +28,7 @@ function logoDetect()
          console.log(jqXHR);
          console.log(textStatus);
          console.log(errorThrown);
+         outputNode.html("Sorry! There was an error sending your image.");
       }
    });
 }
