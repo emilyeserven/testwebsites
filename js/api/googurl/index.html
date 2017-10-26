@@ -14,10 +14,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-offset-4 col-md-4">
-            URL: <input type="text" id="imageurl" name="url" value="https://www.blog.google/static/blog/images/google-200x200.7714256da16f.png" /> <br/>
-            <input type="button" value="Detect Logo" onclick="logoDetect();" /> <br/> <br/>
-
-            <div id="output">Submit something!</div>
+            <h1>Google Cloud Vision API Test</h1>
+            Paste the URL to an image with a logo:
+            <input type="text" id="imageurl" name="url" value="https://www.blog.google/static/blog/images/google-200x200.7714256da16f.png" />
+            <br/><br />
+            <input class="btn btn-default" type="button" value="Detect Logo" onclick="logoDetect();" /> <br/> <br/>
+            <br />
+            <br />
+            <h2>Results</h2>
+            <div id="output">Submit something to see this area change!</div>
             <div id="outputImg"></div>
         </div>
     </div>
