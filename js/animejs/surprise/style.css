@@ -1,0 +1,70 @@
+.square, .circle {
+    pointer-events: none;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    background-color: #000;
+    font-size: 12px;
+}
+.maincircle {
+    left: 50vw;
+    top: 50vh;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #940400;
+    opacity: .5;
+}
+.flextest {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display:inline-block;
+    position: relative;
+    font-size: 2em;
+    opacity: .5;
+    font-family: 'Indie Flower', cursive;
+    text-align:center;
+    opacity: 0;
+    color: #940400;
+}
+.circle {
+    border-radius: 50%;
+    background-color: #EE534F;
+}
+.circle.begin {
+    left: 40vw;
+    top: 50vh;
+    position: absolute;
+}
+.circle.begincont {
+    left: 40vw;
+    top: 110vh;
+    position: absolute;
+}
+.circle.circ2 {
+    left: 10vw;
+    top: 80vh;
+    position: absolute;
+}
+.circle.circ2cont {
+    left: 10vw;
+    top: 110vh;
+    position: absolute;
+}
+body {
+    overflow: hidden;
+    background-color: #FFC6C5;
+}
+body .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
