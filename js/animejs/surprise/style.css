@@ -182,10 +182,4 @@ body .container {
   overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
-  .smallheart {
-    display: none;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
