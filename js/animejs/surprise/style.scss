@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'homemade_appleregular';
+    src: url('HomemadeApple-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caveatregular';
+    src: url('caveat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .square, .circle {
     pointer-events: none;
     position: relative;
@@ -31,12 +44,16 @@
 .text {
     display:inline-block;
     position: relative;
+    font-family: 'homemade_appleregular', cursive;
     font-size: 2em;
     opacity: .5;
-    font-family: 'Indie Flower', cursive;
+    line-height: 1.25em;
     text-align:center;
     opacity: 0;
     color: #940400;
+}
+.text span {
+    font-family: 'caveatregular', cursive;
 }
 .circle {
     border-radius: 50%;
@@ -58,6 +75,38 @@
         &4 {
             left: 90vw;
             top: 90vh;
+        }
+        &5 {
+            left: 23vw;
+            top: 74vh;
+            transform: scale(0);
+            &.circcont {
+                transform: scale(1);
+            }
+        }
+        &6 {
+            left: 3vw;
+            top: 23vh;
+            transform: scale(0);
+            &.circcont {
+                transform: scale(1);
+            }
+        }
+        &7 {
+            left: 93vw;
+            top: 46vh;
+            transform: scale(0);
+            &.circcont {
+                transform: scale(1);
+            }
+        }
+        &8 {
+            left: 72vw;
+            top: 39vh;
+            transform: scale(0);
+            &.circcont {
+                transform: scale(1);
+            }
         }
     }
     &.circcont {
