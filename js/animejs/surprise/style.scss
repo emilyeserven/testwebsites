@@ -30,6 +30,29 @@
     opacity: .5;
     overflow:visible;
 }
+.smallheart {
+    position:absolute;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    &.heart {
+        &1 {
+            left: 20vw;
+            top: 25vh;
+            transform: scale(0);
+        }
+        &2 {
+            left: 72vw;
+            top: 65vh;
+            transform: scale(0);
+        }
+        &3 {
+            left: 10vw;
+            top: 70vh;
+            transform: scale(0);
+        }
+    }
+}
 .heart.fillheart {
     opacity: 0;
 }

@@ -2,7 +2,7 @@ var maincircAnim = anime({
   targets: '#cssSelector .heart.origheart',
   scale: 70,
   duration: 3500,
-  opacity: .9,
+  opacity: 1,
   easing: 'easeInOutSine'
 });
 var maincircAnimFill = anime({
@@ -10,7 +10,7 @@ var maincircAnimFill = anime({
   scale: 70,
   duration: 3000,
   offset: 1000,
-  opacity: .9,
+  opacity: 1,
   easing: 'easeInOutSine'
 });
 
@@ -22,6 +22,39 @@ var lineDraw = anime({
   delay: function(el, i) { return i * 250 }
 });
 
+var heart1Anim = anime({
+  targets: '#cssSelector .smallheart.heart1',
+  scale: 25,
+  duration: 3500,
+  offset: 1500,
+  easing: 'easeInOutSine',
+  opacity: [
+    {value: 0, duration: 0},
+    {value: 0.5, duration: 1500, delay: 500}
+  ],
+});
+var heart2Anim = anime({
+  targets: '#cssSelector .smallheart.heart2',
+  scale: 20,
+  duration: 3500,
+  offset: 1500,
+  easing: 'easeInOutSine',
+  opacity: [
+    {value: 0, duration: 0},
+    {value: 0.5, duration: 1500, delay: 500}
+  ],
+});
+var heart3Anim = anime({
+  targets: '#cssSelector .smallheart.heart3',
+  scale: 10,
+  duration: 3500,
+  offset: 1500,
+  easing: 'easeInOutSine',
+  opacity: [
+    {value: 0, duration: 0},
+    {value: 0.5, duration: 1500, delay: 500}
+  ],
+});
 
 var textAnim = anime({
   targets: '.flextest .text',
