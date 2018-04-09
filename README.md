@@ -3,6 +3,21 @@ Any of my non-WordPress experimental websites will get thrown into this repo. Fe
 
 [Static](#static) | [JavaScript](#javascript) | [AngularJS](#angularjs)
 
+Project List:
+
+* [`boxproject`](https://github.com/emilyeserven/testwebsites/tree/master/boxproject)
+* [`ornette`](https://github.com/emilyeserven/testwebsites/tree/master/ornette)
+* [`typography`](https://github.com/emilyeserven/testwebsites/tree/master/typography)
+* `js/angular/`[`codeschool`](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codeschool)
+* `js/animejs/`[`surprise`](https://github.com/emilyeserven/testwebsites/tree/master/js/animejs/surprise)
+* `js/api/`[`googurl`](https://github.com/emilyeserven/testwebsites/tree/master/js/api/googurl)
+* `js/`[`codecademy`](https://github.com/emilyeserven/testwebsites/tree/master/js/codeacademy)
+* `js/`[`d3`](https://github.com/emilyeserven/testwebsites/tree/master/js/d3)
+* `js/nodejs/`[`lynpractice`](https://github.com/emilyeserven/testwebsites/tree/master/js/nodejs/lynpractice)
+* `js/react/`[`arwes-demo`](https://github.com/emilyeserven/testwebsites/tree/master/js/react/arwes-demo)
+* `js/`[`threejs`](https://github.com/emilyeserven/testwebsites/tree/master/js/threejs)
+* `js/`[`webaudio`](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio)
+
 ## Static
 
 ### Box Project
