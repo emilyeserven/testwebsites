@@ -3,3 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Created with [ARWES](https://arwes.romelperez.com).
 
 [View the project here!](https://rawgit.com/emilyeserven/testwebsites/master/js/react/arwes-demo/build/index.html)
+
+Wishlist:
+* Need to figure out how sounds work
+* Experiment with different animations

@@ -1,9 +1,33 @@
 # About this Repository
 Any of my non-WordPress experimental websites will get thrown into this repo. Feel free to critique and nitpick in the Issues, the whole purpose of this is to document my learning and discover more. :)
 
-[Static](#static) | [JavaScript](#javascript) | [AngularJS](#angularjs)
+<!-- TOC -->
 
-Project List:
+- [About this Repository](#about-this-repository)
+    - [Project List](#project-list)
+    - [Static](#static)
+        - [Box Project](#box-project)
+        - [Typography](#typography)
+        - [Ornette](#ornette)
+    - [JavaScript](#javascript)
+        - [Rock, Paper, Scissors](#rock-paper-scissors)
+        - [ThreeJS Tutorial](#threejs-tutorial)
+        - [The New Aesthetic Demo](#the-new-aesthetic-demo)
+        - [A-Frame Demo](#a-frame-demo)
+        - [D3 Timeline Demo](#d3-timeline-demo)
+        - [D3 Timeline Demo - Albums Version](#d3-timeline-demo---albums-version)
+        - [API Test - Cooper Hewitt](#api-test---cooper-hewitt)
+        - [Web Audio - ToneJS and NexusUI Test](#web-audio---tonejs-and-nexusui-test)
+        - [Google Cloud Vision Test - API POST Request Test](#google-cloud-vision-test---api-post-request-test)
+    - [AngularJS](#angularjs)
+        - [CodeSchool](#codeschool)
+        - [Codecademy](#codecademy)
+        - [Lynda](#lynda)
+        - [Character Select Screen](#character-select-screen)
+
+<!-- /TOC -->
+
+# Project List
 
 * [`boxproject`](https://github.com/emilyeserven/testwebsites/tree/master/boxproject)
 * [`ornette`](https://github.com/emilyeserven/testwebsites/tree/master/ornette)
@@ -18,9 +42,9 @@ Project List:
 * `js/`[`threejs`](https://github.com/emilyeserven/testwebsites/tree/master/js/threejs)
 * `js/`[`webaudio`](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio)
 
-## Static
+# Static
 
-### Box Project
+## Box Project
 
 `/boxproject`
 
@@ -30,7 +54,7 @@ This project was based off a [foundation](https://github.com/DMD1070/project-tem
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/boxproject) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/boxproject/index.html)
 
-### Typography
+## Typography
 
 `/typography`
 
@@ -38,7 +62,7 @@ Practice pages for my [web design class](https://dmd1070.com/lessons/7-web-typog
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/typography) | [Lovecraft RawGit](https://rawgit.com/emilyeserven/testwebsites/master/typography/lovecraft.html) | [Jaden RawGit](https://rawgit.com/emilyeserven/testwebsites/master/typography/smith.html)
 
-### Ornette
+## Ornette
 
 `/ornette`
 
@@ -46,9 +70,9 @@ A practice website for my [web design class](https://dmd1070.com/) (Lesson 6), I
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/ornette) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/ornette/index.html)
 
-## JavaScript
+# JavaScript
 
-### Rock, Paper, Scissors
+## Rock, Paper, Scissors
 
 `/js/codeacademy`
 
@@ -56,7 +80,7 @@ Inspired by an exercise from the Codecademy JavaScript track. Expanded to includ
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/codeacademy) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/codeacademy/rock-paper-scissors.html)
 
-### ThreeJS Tutorial
+## ThreeJS Tutorial
 
 `/js/threejs`
 
@@ -64,7 +88,7 @@ A light test/demo of the `three.js` library's tutorial. It's just a spinning cub
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/threejs) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/threejs/tutorial.html)
 
-### The New Aesthetic Demo
+## The New Aesthetic Demo
 
 `/js/theNewAesthetic`
 
@@ -72,7 +96,7 @@ A light test/demo of the `newaesthetic.js` library. Doesn't work using RawGit, s
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/theNewAesthetic) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/theNewAesthetic/testproj.html)
 
-### A-Frame Demo
+## A-Frame Demo
 
 `/vr/aframe-test`
 
@@ -80,7 +104,7 @@ A demo of A Frame, a framework for WebVR. Not much has been done with this proje
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/vr/aframe-test) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/vr/aframe-test/index.html)
 
-### D3 Timeline Demo
+## D3 Timeline Demo
 
 `/js/d3/d3timeline`
 
@@ -95,7 +119,7 @@ While I'm using code that was already written, I'd like to make some improvement
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timeline) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timeline/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
-### D3 Timeline Demo - Albums Version
+## D3 Timeline Demo - Albums Version
 
 `/js/d3/d3timelineAlbums`
 
@@ -105,7 +129,7 @@ It'd be cool to do a matrix using D3 in the future, with the date the music was 
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timelineAlbums) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timelineAlbums/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
-### API Test - Cooper Hewitt
+## API Test - Cooper Hewitt
 
 `/js/api/cooper-hewitt-1`
 
@@ -115,7 +139,7 @@ Refactoring of this is definitely needed. Since the project was created on a lim
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/cooperhewitt-1) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/cooperhewitt-1/index.html)
 
-### Web Audio - ToneJS and NexusUI Test
+## Web Audio - ToneJS and NexusUI Test
 
 `/js/webaudio`
 
@@ -123,7 +147,7 @@ Part of an assignment calling to connect ToneJS and NexusUI and create a web app
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/webaudio/index.html)
 
-### Google Cloud Vision Test - API POST Request Test
+## Google Cloud Vision Test - API POST Request Test
 
 `/js/aoi/cloudsight-api`
 
@@ -133,9 +157,9 @@ Tried to make something POST to a server and return a response and eventually (2
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/googurl) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/googurl/index.html)
 
-## AngularJS
+# AngularJS
 
-### CodeSchool
+## CodeSchool
 
 `/js/angular/codeschool`
 
@@ -143,7 +167,7 @@ A practice website done while completing CodeSchool's "Shaping Up With AngularJS
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codeschool/index.html)
 
-### Codecademy
+## Codecademy
 
 `/js/angular/codecademy`
 
@@ -152,7 +176,7 @@ A practice website done while completing Codecademy's AngularJS 1.x course.
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codecademy) |
 [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codecademy/index.html)
 
-### Lynda
+## Lynda
 
 `/js/angular/lynda`
 
@@ -160,7 +184,7 @@ A practice website done while completing Lynda.com's Angular 1 course.
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/lynda) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/lynda/index.html)
 
-### Character Select Screen
+## Character Select Screen
 
 `/js/angular/chara-select`
 
