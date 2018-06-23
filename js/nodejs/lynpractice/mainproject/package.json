@@ -11,9 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.9",
-    "socket.io": "^2.0.4"
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14",
+    "socket.io": "^2.1.0"
   },
   "devDependencies": {
     "jasmine": "^3.1.0",
