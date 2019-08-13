@@ -1,5 +1,55 @@
 var synth = new Tone.FMSynth().toMaster();
 
+class ControlSet {
+  constructor(name, primary, secondary) {
+    this.name = name; // color name, will generate ID names among other things.
+    this.primary = primary;
+    this.secondary = secondary;
+  }
+  dialValue = 3;
+  makeDial() {
+    var self = this;
+    var thisDial = new Nexus.Dial('#' + this.name + 'Dial', {
+      'min': 0,
+      'max': 6,
+      'value': 3
+    });
+    thisDial.colorize("accent",this.primary);
+    thisDial.colorize("fill",this.secondary);
+    var dialDisplay = document.getElementById(this.name + "Display");
+    dialDisplay.innerHTML = "A" + this.dialValue;
+    thisDial.on('change', function(v) {
+      self.changeValue(v);
+    });
+  }
+  changeValue(v) {
+    console.log(this.name + " Dial value: " + v + " | Rounded: " + Math.round(v));
+    var newValue = Math.round(v);
+    var dialDisplay = document.getElementById(this.name + "Display");
+    dialDisplay.innerHTML = "A" + newValue;
+    this.dialValue = newValue;
+    return newValue;
+  }
+  makeButton() {
+    var dialValue = this.dialValue;
+    var thisButton = new Nexus.Button('#' + this.name + 'Button');
+    thisButton.colorize("accent",this.secondary);
+    thisButton.colorize("fill",this.primary);
+    thisButton.on('click',function(v) {
+      console.log("Red Button: A" + dialValue);
+      synth.triggerAttack('A' + dialValue);
+    });
+    thisButton.on('release',function(v) {
+      synth.triggerRelease();
+    });
+  }
+}
+
+var test = new ControlSet("red", "#E80000", "#410000");
+console.log(test.name);
+test.makeDial();
+test.makeButton();
+/*
 var redDial = new Nexus.Dial('#redDial', {
     'min': 0,
     'max': 6,
@@ -17,6 +67,8 @@ redDial.on('change', function(v) {
     return redValue;
 });
 
+*/
+/*
 var redButton = new Nexus.Button('#redButton');
 redButton.colorize("accent","#410000");
 redButton.colorize("fill","#E80000");
@@ -27,7 +79,7 @@ redButton.on('click',function(v) {
 redButton.on('release',function(v) {
   synth.triggerRelease();
 });
-
+*/
 /** ORANGE **/
 
 var oraDial = new Nexus.Dial('#oraDial', {
