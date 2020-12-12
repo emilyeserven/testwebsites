@@ -51,7 +51,7 @@ See the README [here](https://github.com/emilyeserven/testwebsites/tree/master/s
 
 Inspired by an exercise from the Codecademy JavaScript track. Expanded to include event listeners, more functions, and DOM manipulation.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/codeacademy) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/codeacademy/rock-paper-scissors.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/codeacademy) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/codeacademy/rock-paper-scissors.html)
 
 ## ThreeJS Tutorial
 
@@ -59,15 +59,15 @@ Inspired by an exercise from the Codecademy JavaScript track. Expanded to includ
 
 A light test/demo of the `three.js` library's tutorial. It's just a spinning cube. I will probably return to this later.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/threejs) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/threejs/tutorial.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/threejs) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/threejs/tutorial.html)
 
 ## The New Aesthetic Demo
 
 `/js/theNewAesthetic`
 
-A light test/demo of the `newaesthetic.js` library. Doesn't work using RawGit, so to see full effects, you'd need to locally serve it on your machine. (Alternatively, you can just peek at [this static preview](https://raw.githubusercontent.com/emilyeserven/testwebsites/master/js/theNewAesthetic/itWorkedBefore.png).)
+A light test/demo of the `newaesthetic.js` library. Doesn't work using Preview, so to see full effects, you'd need to locally serve it on your machine. (Alternatively, you can just peek at [this static preview](https://raw.githubusercontent.com/emilyeserven/testwebsites/master/js/theNewAesthetic/itWorkedBefore.png).)
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/theNewAesthetic) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/theNewAesthetic/testproj.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/theNewAesthetic) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/theNewAesthetic/testproj.html)
 
 ## A-Frame Demo
 
@@ -75,7 +75,7 @@ A light test/demo of the `newaesthetic.js` library. Doesn't work using RawGit, s
 
 A demo of A Frame, a framework for WebVR. Not much has been done with this project yet.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/vr/aframe-test) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/vr/aframe-test/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/vr/aframe-test) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/vr/aframe-test/index7.html)
 
 ## D3 Timeline Demo
 
@@ -90,7 +90,7 @@ While I'm using code that was already written, I'd like to make some improvement
 * Custom colors per bar (to correspond with band themes)
 * A different visual indicator for acts that are still active
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timeline) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timeline/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timeline) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/d3/d3timeline/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
 ## D3 Timeline Demo - Albums Version
 
@@ -100,7 +100,7 @@ A demo similar to the one above using one-off dates instead of ranges of dates. 
 
 It'd be cool to do a matrix using D3 in the future, with the date the music was released on one axis and the relative "heaviness" of the music on another axis.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timelineAlbums) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/d3/d3timelineAlbums/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/d3/d3timelineAlbums) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/d3/d3timelineAlbums/index.html) | [Base](http://bl.ocks.org/rengel-de/5603464)
 
 ## API Test - Cooper Hewitt
 
@@ -110,7 +110,7 @@ A quick test to see if I could connect to an API I've never used before and inte
 
 Refactoring of this is definitely needed. Since the project was created on a limited-access school computer, I only worked with one HTML file and a ton of commits.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/cooperhewitt-1) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/cooperhewitt-1/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/cooperhewitt-1) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/api/cooperhewitt-1/index.html)
 
 ## Web Audio - ToneJS and NexusUI Test
 
@@ -118,7 +118,7 @@ Refactoring of this is definitely needed. Since the project was created on a lim
 
 Part of an assignment calling to connect ToneJS and NexusUI and create a web application. This is just the first step, I'm planning on figuring out the other interface elements and instruments soon.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/webaudio/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/webaudio) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/webaudio/index.html)
 
 ## Google Cloud Vision Test - API POST Request Test
 
@@ -128,7 +128,7 @@ Tried to make something POST to a server and return a response and eventually (2
 
 * I want to add an image uploading function at some point
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/googurl) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/api/googurl/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/api/googurl) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/api/googurl/index.html)
 
 # AngularJS
 
@@ -138,7 +138,7 @@ Tried to make something POST to a server and return a response and eventually (2
 
 A practice website done while completing CodeSchool's "Shaping Up With AngularJS" course.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codeschool) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codeschool/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codeschool) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/angular/codeschool/index.html)
 
 ## Codecademy
 
@@ -147,7 +147,7 @@ A practice website done while completing CodeSchool's "Shaping Up With AngularJS
 A practice website done while completing Codecademy's AngularJS 1.x course.
 
 [Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/codecademy) |
-[RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/codecademy/index.html)
+[Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/angular/codecademy/index.html)
 
 ## Lynda
 
@@ -155,7 +155,7 @@ A practice website done while completing Codecademy's AngularJS 1.x course.
 
 A practice website done while completing Lynda.com's Angular 1 course.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/lynda) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/lynda/index.html)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/lynda) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/angular/lynda/index.html)
 
 ## Character Select Screen
 
@@ -163,4 +163,4 @@ A practice website done while completing Lynda.com's Angular 1 course.
 
 An Angular practice website using pictures and bios of friends to fill out a "character selection" interface. Often would be seen in a video game.
 
-[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select) | [RawGit](https://rawgit.com/emilyeserven/testwebsites/master/js/angular/chara-select/index.html) | [Design Prototype](https://xd.adobe.com/view/3b08ed02-f5b2-466a-bac0-36a73406dca3/screen/6adad8e9-9bc5-4838-9b7d-ec73c0b0e083/Home-Page/)
+[Project Directory](https://github.com/emilyeserven/testwebsites/tree/master/js/angular/chara-select) | [Preview](https://rawcdn.githack.com/emilyeserven/testwebsites/ee4544b00350dbeee2559172f3c69b76814aec69/js/angular/chara-select/index.html) | [Design Prototype](https://xd.adobe.com/view/3b08ed02-f5b2-466a-bac0-36a73406dca3/screen/6adad8e9-9bc5-4838-9b7d-ec73c0b0e083/Home-Page/)
