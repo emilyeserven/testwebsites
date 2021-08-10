@@ -1,8 +1,9 @@
 var synth = new Tone.FMSynth().toMaster();
 
 class ControlSet {
-  constructor(name, primary, secondary) {
+  constructor(name, note, primary, secondary) {
     this.name = name; // color name, will generate ID names among other things.
+    this.note = note.toUpperCase();
     this.primary = primary;
     this.secondary = secondary;
     this.dialValue = 3;
@@ -19,7 +20,7 @@ class ControlSet {
     thisDial.colorize("accent",this.primary);
     thisDial.colorize("fill",this.secondary);
     var dialDisplay = document.getElementById(this.name + "Display");
-    dialDisplay.innerHTML = "A" + this.dialValue;
+    dialDisplay.innerHTML = this.note + this.dialValue;
     thisDial.on('change', function(v) {
       self.changeValue(v);
     });
@@ -30,7 +31,7 @@ class ControlSet {
     console.log(this.name + " Dial value: " + v + " | Rounded: " + Math.round(v));
     var newValue = Math.round(v);
     var dialDisplay = document.getElementById(this.name + "Display");
-    dialDisplay.innerHTML = "A" + newValue;
+    dialDisplay.innerHTML = this.note + newValue;
     this.dialValue = newValue;
     return newValue;
   }
@@ -46,8 +47,8 @@ class ControlSet {
     thisButton.colorize("fill",this.primary);
     thisButton.on('click',function(v) {
       console.log("this makeButton", self.dialValue);
-      console.log("Red Button: A" + self.dialValue);
-      synth.triggerAttack('A' + self.dialValue);
+      console.log(self.name + " Button: " + self.note + self.dialValue);
+      synth.triggerAttack(self.note + self.dialValue);
     });
     thisButton.on('release',function(v) {
       synth.triggerRelease();
@@ -58,12 +59,12 @@ class ControlSet {
   }
 }
 
-var test = new ControlSet("red", "#E80000", "#410000");
+var test = new ControlSet("red", "A", "#E80000", "#410000");
 console.log(test.name);
 test.makeDial();
 test.makeButton();
 
-var test2 = new ControlSet("ora", "#FF7600", "#823C00");
+var test2 = new ControlSet("ora", "B", "#FF7600", "#823C00");
 console.log(test2.name);
 test2.makeDial();
 test2.makeButton();
