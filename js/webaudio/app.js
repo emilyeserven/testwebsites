@@ -1,9 +1,8 @@
 var synth = new Tone.FMSynth().toMaster();
 
 class ControlSet {
-  constructor(name, note, primary, secondary) {
-    this.name = name; // color name, will generate ID names among other things.
-    this.note = note.toUpperCase();
+  constructor(name, primary, secondary) {
+    this.name = name.toUpperCase(); // color name, will generate ID names among other things.
     this.primary = primary;
     this.secondary = secondary;
     this.dialValue = 3;
@@ -14,6 +13,7 @@ class ControlSet {
     var self = this;
     console.log("self makeDial", self.dialValue);
     console.log("this makeDial", this.dialValue);
+    console.log(this.name);
     var thisDial = new Nexus.Dial('#' + this.name + 'Dial', {
       'min': 0,
       'max': 6,
@@ -22,7 +22,7 @@ class ControlSet {
     thisDial.colorize("accent",this.primary);
     thisDial.colorize("fill",this.secondary);
     var dialDisplay = document.getElementById(this.name + "Display");
-    dialDisplay.innerHTML = this.note + this.dialValue;
+    dialDisplay.innerHTML = this.name + this.dialValue;
     thisDial.on('change', function(v) {
       self.changeValue(v);
     });
@@ -33,7 +33,7 @@ class ControlSet {
     console.log(this.name + " Dial value: " + v + " | Rounded: " + Math.round(v));
     var newValue = Math.round(v);
     var dialDisplay = document.getElementById(this.name + "Display");
-    dialDisplay.innerHTML = this.note + newValue;
+    dialDisplay.innerHTML = this.name + newValue;
     this.dialValue = newValue;
     return newValue;
   }
@@ -49,8 +49,8 @@ class ControlSet {
     thisButton.colorize("fill",this.primary);
     thisButton.on('click',function(v) {
       console.log("this makeButton", self.dialValue);
-      console.log(self.name + " Button: " + self.note + self.dialValue);
-      synth.triggerAttack(self.note + self.dialValue);
+      console.log(self.name + " Button: " + self.name + self.dialValue);
+      synth.triggerAttack(self.name + self.dialValue);
     });
     thisButton.on('release',function(v) {
       synth.triggerRelease();
@@ -61,8 +61,8 @@ class ControlSet {
   }
 }
 
-let redSet = new ControlSet("red", "A", "#E80000", "#410000"),
-    oraSet = new ControlSet("ora", "B", "#FF7600", "#823C00");
+let redSet = new ControlSet("A", "#E80000", "#410000"),
+    oraSet = new ControlSet("B", "#FF7600", "#823C00");
 
 /* YELLOW */
 
