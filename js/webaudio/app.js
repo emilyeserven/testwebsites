@@ -7,6 +7,8 @@ class ControlSet {
     this.primary = primary;
     this.secondary = secondary;
     this.dialValue = 3;
+    this.makeDial();
+    this.makeButton();
   }
   makeDial() {
     var self = this;
@@ -59,77 +61,9 @@ class ControlSet {
   }
 }
 
-var test = new ControlSet("red", "A", "#E80000", "#410000");
-console.log(test.name);
-test.makeDial();
-test.makeButton();
+let redSet = new ControlSet("red", "A", "#E80000", "#410000"),
+    oraSet = new ControlSet("ora", "B", "#FF7600", "#823C00");
 
-var test2 = new ControlSet("ora", "B", "#FF7600", "#823C00");
-console.log(test2.name);
-test2.makeDial();
-test2.makeButton();
-
-/*
-var redDial = new Nexus.Dial('#redDial', {
-    'min': 0,
-    'max': 6,
-    'value': 3
-});
-redDial.colorize("accent","#E80000");
-redDial.colorize("fill","#410000");
-var redValue = 3;
-redDisplay = document.getElementById("redDisplay");
-redDisplay.innerHTML = "A" + redValue;
-redDial.on('change', function(v) {
-    console.log("Red Dial value: " + v + " | Rounded: " + Math.round(v));
-    redValue = Math.round(v);
-    redDisplay.innerHTML = "A" + redValue;
-    return redValue;
-});
-
-*/
-/*
-var redButton = new Nexus.Button('#redButton');
-redButton.colorize("accent","#410000");
-redButton.colorize("fill","#E80000");
-redButton.on('click',function(v) {
-  console.log("Red Button: A" + redValue);
-  synth.triggerAttack('A' + redValue);
-});
-redButton.on('release',function(v) {
-  synth.triggerRelease();
-});
-*/
-/** ORANGE **/
-/*
-var oraDial = new Nexus.Dial('#oraDial', {
-    'min': 0,
-    'max': 6,
-    'value': 3
-});
-oraDial.colorize("accent","#FF7600");
-oraDial.colorize("fill","#823C00");
-var oraValue = 3;
-oraDisplay = document.getElementById("oraDisplay");
-oraDisplay.innerHTML = "B" + oraValue;
-oraDial.on('change', function(v) {
-    console.log("Orange Dial value: " + v + " | Rounded: " + Math.round(v));
-    oraValue = Math.round(v);
-    oraDisplay.innerHTML = "B" + oraValue;
-    return oraValue;
-});
-
-var oraButton = new Nexus.Button('#oraButton');
-oraButton.colorize("accent","#823C00");
-oraButton.colorize("fill","#FF7600");
-oraButton.on('click',function(v) {
-  console.log("Orange Button: B" + oraValue);
-  synth.triggerAttack('B' + oraValue);
-});
-oraButton.on('release',function(v) {
-  synth.triggerRelease();
-});
-*/
 /* YELLOW */
 
 var yelDial = new Nexus.Dial('#yelDial', {
