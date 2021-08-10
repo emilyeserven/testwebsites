@@ -5,14 +5,16 @@ class ControlSet {
     this.name = name; // color name, will generate ID names among other things.
     this.primary = primary;
     this.secondary = secondary;
+    this.dialValue = 3;
   }
-  dialValue = 3;
   makeDial() {
     var self = this;
+    console.log("self makeDial", self.dialValue);
+    console.log("this makeDial", this.dialValue);
     var thisDial = new Nexus.Dial('#' + this.name + 'Dial', {
       'min': 0,
       'max': 6,
-      'value': 3
+      'value': this.dialValue
     });
     thisDial.colorize("accent",this.primary);
     thisDial.colorize("fill",this.secondary);
@@ -23,6 +25,8 @@ class ControlSet {
     });
   }
   changeValue(v) {
+    //console.log("self changeValue", self.dialValue);
+    console.log("this changeValue", this.dialValue);
     console.log(this.name + " Dial value: " + v + " | Rounded: " + Math.round(v));
     var newValue = Math.round(v);
     var dialDisplay = document.getElementById(this.name + "Display");
@@ -31,17 +35,26 @@ class ControlSet {
     return newValue;
   }
   makeButton() {
+    // Adding the self = this here because the event listeners were hijacking the `this`
+    // and preventing the correct note from actually playing
+    var self = this;
+    //console.log("self makeButton", self.dialValue);
+    console.log("this makeButton", this.dialValue);
     var dialValue = this.dialValue;
     var thisButton = new Nexus.Button('#' + this.name + 'Button');
     thisButton.colorize("accent",this.secondary);
     thisButton.colorize("fill",this.primary);
     thisButton.on('click',function(v) {
-      console.log("Red Button: A" + dialValue);
-      synth.triggerAttack('A' + dialValue);
+      console.log("this makeButton", self.dialValue);
+      console.log("Red Button: A" + self.dialValue);
+      synth.triggerAttack('A' + self.dialValue);
     });
     thisButton.on('release',function(v) {
       synth.triggerRelease();
     });
+  }
+  clickButton() {
+    
   }
 }
 
@@ -49,6 +62,12 @@ var test = new ControlSet("red", "#E80000", "#410000");
 console.log(test.name);
 test.makeDial();
 test.makeButton();
+
+var test2 = new ControlSet("ora", "#FF7600", "#823C00");
+console.log(test2.name);
+test2.makeDial();
+test2.makeButton();
+
 /*
 var redDial = new Nexus.Dial('#redDial', {
     'min': 0,
@@ -81,7 +100,7 @@ redButton.on('release',function(v) {
 });
 */
 /** ORANGE **/
-
+/*
 var oraDial = new Nexus.Dial('#oraDial', {
     'min': 0,
     'max': 6,
@@ -109,7 +128,7 @@ oraButton.on('click',function(v) {
 oraButton.on('release',function(v) {
   synth.triggerRelease();
 });
-
+*/
 /* YELLOW */
 
 var yelDial = new Nexus.Dial('#yelDial', {
