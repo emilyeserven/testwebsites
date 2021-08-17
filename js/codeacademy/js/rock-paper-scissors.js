@@ -10,62 +10,77 @@
 // BONUS: Custom setting to input the rounds you want to play. Set before playing game.
 
 // Initialize the user and computer scores and set them to 0.
-var userScore = 0;
-var compScore = 0;
+let userScore = 0,
+    compScore = 0;
 
 // Store (cache) the DOM nodes that will be modified for later.
-var elUserScore = document.getElementById('userScore');
-var elCompScore = document.getElementById('compScore');
-var elUserPick = document.getElementById('userPick');
-var elCompPick = document.getElementById('compPick');
-var elOverallResult = document.getElementById('overallResult');
+const elUserScore = document.getElementById('userScore'),
+      elCompScore = document.getElementById('compScore'),
+      elUserPick = document.getElementById('userPick'),
+      elCompPick = document.getElementById('compPick'),
+      elOverallResult = document.getElementById('overallResult');
 
-// Set up the function to compare the user choice and computer choice.
-var compare = function(choice1, choice2) {
-    if (choice1 === choice2) {
-        console.log("5a. Tie.");
-        return result = ["The result is a tie!", "tie"];
-    } else if (choice1 === "rock") {
-        if (choice2 === "scissors") {
-            console.log("5b. rock > scissors");
+// The result checking function changed to a lookup object on recommendation of mentor
+
+let gameCheck = {
+    "rock": (choice) => {
+        if(choice === "paper"){
+            console.log("5a. paper > rock");
             return result = ["rock wins", "user"];
-        } else if (choice2 === "paper") {
-            console.log("5c. paper > rock");
+        }
+        if(choice === "scissors"){
+            console.log("5b. rock > scissors");
             return result = ["paper wins", "comp"];
         }
-    } else if (choice1 === "paper") {
-        if (choice2 === "rock") {
-            console.log("5d. paper > rock");
+    },
+    "paper": (choice) => {
+        if(choice === "rock"){
+            console.log("5a. paper > rock");
             return result = ["paper wins", "user"];
-        } else if (choice2 === "scissors") {
-            console.log("5e. scissors > paper");
+        }
+        if(choice === "scissors"){
+            console.log("5c. scissors > paper");
             return result = ["scissors win", "comp"];
         }
-    } else if (choice1 === "scissors") {
-        if (choice2 === "rock") {
-            console.log("5f. rock > scissors");
+    },
+    "scissors": (choice) => {
+        if(choice === "paper"){
+            console.log("5c. scissors > paper");
             return result = ["rock wins", "comp"];
-        } else if (choice2 === "paper") {
-            console.log("5g. scissors > paper");
+        }
+        if(choice === "rock"){
+            console.log("5b. rock > scissors");
             return result = ["scissors win", "user"];
         }
     }
 }
 
+let compare = (choice1, choice2) => {
+    if(!(choice1 in gameCheck) || !(choice2 in gameCheck)){
+        console.log("Invalid arguments passed");
+        return false;
+    }
+    if(choice1 === choice2) {
+        return result = ["The result is a tie!", "tie"];
+    }
+    return gameCheck[choice1](choice2);
+}
+
+
 // Set up the function that will allow the computer to make a 'choice'.
-var computerRoll = function() {
+let computerRoll = function() {
     console.log("2. Computer is rolling.");
-    var computerChoice = Math.random();
+    let computerChoice = Math.random();
     // Above will select a random number between 0 and 1 and store that number in the computerChoice variable.
     // Below if statement will assign Rock, Paper, or Scissors to the number.
     if (computerChoice < 0.34) {
-        var computerChoice = "rock";
+        computerChoice = "rock";
         console.log("3a. Math is " + computerChoice);
     } else if(computerChoice <= 0.67) {
-        var computerChoice = "paper";
+        computerChoice = "paper";
         console.log("3b. Math is " + computerChoice);
     } else {
-        var computerChoice = "scissors";
+        computerChoice = "scissors";
         console.log("3c. Math is " + computerChoice);
     }
     console.log("3sub. Computer Choice is " + computerChoice);
@@ -74,17 +89,17 @@ var computerRoll = function() {
 };
 
 // Below is the main function that executes whenever a button is clicked. Called whenever an event listener (below) is activated.
-var userChoice = function(choice) {
+let userChoiceFunc = function(choice) {
     //set the function input to be the variable userChoice.
-    var userChoice = choice;
+    let userChoice = choice;
     console.log("1. User Choice is " + choice);
     // assign the returned value of the computerRoll function to the variable computerChoice.
-    var computerChoice = computerRoll();
+    let computerChoice = computerRoll();
     // Compare the two scores with the compare function.
     console.log(compare(userChoice, computerChoice));
     console.log("6. " + result[0]);
     // Immediatly call the getResult function, which will add to the user score, computer score, or neither.
-    var getResult = (function() {
+    let getResult = (function() {
         if (result[1] === "user") {
             userScore++;
             console.log("7a. Add one to user! userScore is now " + userScore);
@@ -114,16 +129,16 @@ var userChoice = function(choice) {
 
 // For any of the below event listeners, they're activated with a click on a specific element with an ID specified.
 // They then call the userChoice function with a specific string value. 
-var rockBox = document.getElementById('rock');
+let rockBox = document.getElementById('rock');
 rockBox.addEventListener('click', function() {
-    userChoice("rock");
+    userChoiceFunc("rock");
 }, false);
 
-var paperBox = document.getElementById('paper');
+let paperBox = document.getElementById('paper');
 paperBox.addEventListener('click', function() {
-    userChoice("paper");
+    userChoiceFunc("paper");
 }, false);
-var scissorBox = document.getElementById('scissors');
+let scissorBox = document.getElementById('scissors');
 scissorBox.addEventListener('click', function() {
-    userChoice("scissors");
+    userChoiceFunc("scissors");
 }, false);
